@@ -6,18 +6,18 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 16:00+0200\n"
-"PO-Revision-Date: 2019-09-06 13:49+0200\n"
-"Last-Translator: Julien Palard <julien@palard.fr>\n"
+"PO-Revision-Date: 2020-11-18 14:55-0500\n"
+"Last-Translator: Franck Vachon <logicOnAbstractions@gmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: library/inspect.rst:2
 msgid ":mod:`inspect` --- Inspect live objects"
-msgstr ""
+msgstr ":mod:`inspect` --- Inspection d'objets"
 
 #: library/inspect.rst:10
 msgid "**Source code:** :source:`Lib/inspect.py`"
@@ -32,6 +32,13 @@ msgid ""
 "extract and format the argument list for a function, or get all the "
 "information you need to display a detailed traceback."
 msgstr ""
+"Le module :mod:`inspect` implémente plusieurs fonctions permettant d'obtenir "
+"de l'information à propos d'objets tels que les modules, classes, méthodes, "
+"fonctions, traces de piles, objet cadre et objet code. Par exemple, il "
+"permet d'inspecter le contenu d'une classe, de retrouver le code source "
+"d'une méthode, d'extraire et de mettre en forme une liste d'arguments pour "
+"une fonction, ou obtenir toute l'information nécessaire pour une trace de "
+"pile détaillée."
 
 #: library/inspect.rst:21
 msgid ""
@@ -39,10 +46,13 @@ msgid ""
 "checking, getting source code, inspecting classes and functions, and "
 "examining the interpreter stack."
 msgstr ""
+"Ce module donne accès à 4 types de services : vérification de typage, "
+"obtention de code source, inspection de classes et de fonctions et examen de "
+"la pile d'exécution."
 
 #: library/inspect.rst:29
 msgid "Types and members"
-msgstr ""
+msgstr "Types et membres"
 
 #: library/inspect.rst:31
 msgid ""
@@ -52,6 +62,11 @@ msgid ""
 "`getmembers`. They also help you determine when you can expect to find the "
 "following special attributes:"
 msgstr ""
+"La fonction :func:`getmembers` retrouve les membres d'un objet, tel qu'une "
+"classe ou un module. Les fonctions avec préfixe *is* sont surtout offertes "
+"comme choix pratique de deuxième argument à :func:`getmembers`. Elles "
+"permettent aussi de déterminer si on peut s'attendre à trouver les attributs "
+"spéciaux suivants :"
 
 #: library/inspect.rst:41
 msgid "Type"
@@ -75,15 +90,16 @@ msgstr "__doc__"
 
 #: library/inspect.rst:48 library/inspect.rst:76 library/inspect.rst:231
 msgid "documentation string"
-msgstr ""
+msgstr "texte de documentation"
 
 #: library/inspect.rst:45
 msgid "__file__"
 msgstr "__file__"
 
+# built-in == fonctions natives car le titre de la doc pour les Built-ins a été traduite ainsi
 #: library/inspect.rst:45
 msgid "filename (missing for built-in modules)"
-msgstr ""
+msgstr "nom de fichier (inexistant pour les fonctions natives)"
 
 #: library/inspect.rst:48
 msgid "class"
@@ -95,7 +111,7 @@ msgstr "__name__"
 
 #: library/inspect.rst:50
 msgid "name with which this class was defined"
-msgstr ""
+msgstr "nom de la classe lors de sa définition"
 
 #: library/inspect.rst:63 library/inspect.rst:202 library/inspect.rst:236
 msgid "__qualname__"
@@ -111,7 +127,7 @@ msgstr "__module__"
 
 #: library/inspect.rst:55
 msgid "name of module in which this class was defined"
-msgstr ""
+msgstr "nom du module contenant la classe lors de sa définition"
 
 #: library/inspect.rst:58
 msgid "method"
@@ -119,7 +135,7 @@ msgstr "méthode"
 
 #: library/inspect.rst:60
 msgid "name with which this method was defined"
-msgstr ""
+msgstr "nom de la méthode lors de sa définition"
 
 #: library/inspect.rst:65
 msgid "__func__"
@@ -127,19 +143,20 @@ msgstr "__func__"
 
 #: library/inspect.rst:65
 msgid "function object containing implementation of method"
-msgstr ""
+msgstr "objet fonction contenant l'implémentation de la méthode"
 
 #: library/inspect.rst:238
 msgid "__self__"
 msgstr "__self__"
 
+# bound method
 #: library/inspect.rst:69
 msgid "instance to which this method is bound, or ``None``"
-msgstr ""
+msgstr "instance à laquelle cette méthode est liée, ou ``None``"
 
 #: library/inspect.rst:73
 msgid "name of module in which this method was defined"
-msgstr ""
+msgstr "nom du module contenant la méthode lors de sa définition"
 
 #: library/inspect.rst:76
 msgid "function"
@@ -147,7 +164,7 @@ msgstr "fonction"
 
 #: library/inspect.rst:78
 msgid "name with which this function was defined"
-msgstr ""
+msgstr "nom de la fonction lors de sa définition"
 
 #: library/inspect.rst:83
 msgid "__code__"
@@ -156,6 +173,7 @@ msgstr "__code__"
 #: library/inspect.rst:83
 msgid "code object containing compiled function :term:`bytecode`"
 msgstr ""
+"objet code contenant une fonction :term:`code intermédiaire <bytecode>`"
 
 #: library/inspect.rst:87
 msgid "__defaults__"
@@ -163,7 +181,7 @@ msgstr "__defaults__"
 
 #: library/inspect.rst:87
 msgid "tuple of any default values for positional or keyword parameters"
-msgstr ""
+msgstr "n-uplet de valeurs par défaut pour arguments positionnels ou nommés"
 
 #: library/inspect.rst:91
 msgid "__kwdefaults__"
@@ -171,7 +189,7 @@ msgstr "__kwdefaults__"
 
 #: library/inspect.rst:91
 msgid "mapping of any default values for keyword-only parameters"
-msgstr ""
+msgstr "tableau de correspondance de valeurs par défaut pour paramètres nommés"
 
 #: library/inspect.rst:95
 msgid "__globals__"
@@ -179,7 +197,7 @@ msgstr "__globals__"
 
 #: library/inspect.rst:95
 msgid "global namespace in which this function was defined"
-msgstr ""
+msgstr "espace de nommage global lors de la définition de la fonction"
 
 #: library/inspect.rst:98
 msgid "__annotations__"
@@ -190,10 +208,12 @@ msgid ""
 "mapping of parameters names to annotations; ``\"return\"`` key is reserved "
 "for return annotations."
 msgstr ""
+"tableau de correspondance des paramètres à leur annotation ; ``\"return\"`` "
+"est un mot-clé réservé pour les retours d'annotations."
 
 #: library/inspect.rst:104
 msgid "name of module in which this function was defined"
-msgstr ""
+msgstr "nom du module contenant la fonction lors de sa définition"
 
 #: library/inspect.rst:107
 msgid "traceback"
@@ -205,7 +225,7 @@ msgstr "tb_frame"
 
 #: library/inspect.rst:107
 msgid "frame object at this level"
-msgstr ""
+msgstr "objet cadre à ce niveau"
 
 #: library/inspect.rst:110
 msgid "tb_lasti"
@@ -213,7 +233,7 @@ msgstr "tb_lasti"
 
 #: library/inspect.rst:132
 msgid "index of last attempted instruction in bytecode"
-msgstr ""
+msgstr "index de la dernière instruction lancée dans le code intermédiaire"
 
 #: library/inspect.rst:113
 msgid "tb_lineno"
@@ -221,7 +241,7 @@ msgstr "tb_lineno"
 
 #: library/inspect.rst:135
 msgid "current line number in Python source code"
-msgstr ""
+msgstr "numéro de ligne courant dans le code source Python"
 
 #: library/inspect.rst:116
 msgid "tb_next"
@@ -229,11 +249,11 @@ msgstr "tb_next"
 
 #: library/inspect.rst:116
 msgid "next inner traceback object (called by this level)"
-msgstr ""
+msgstr "trace d'exécution interne suivante (appel par le cadre courant)"
 
 #: library/inspect.rst:204 library/inspect.rst:221
 msgid "frame"
-msgstr ""
+msgstr "cadre"
 
 #: library/inspect.rst:120
 msgid "f_back"
@@ -242,6 +262,7 @@ msgstr "f_back"
 #: library/inspect.rst:120
 msgid "next outer frame object (this frame's caller)"
 msgstr ""
+"trace d'exécution externe suivante (le contexte appelant du cadre courant)"
 
 #: library/inspect.rst:123
 msgid "f_builtins"
@@ -249,7 +270,7 @@ msgstr "f_builtins"
 
 #: library/inspect.rst:123
 msgid "builtins namespace seen by this frame"
-msgstr ""
+msgstr "espace de nommage natif du cadre courant"
 
 #: library/inspect.rst:126
 msgid "f_code"
@@ -257,7 +278,7 @@ msgstr "f_code"
 
 #: library/inspect.rst:126
 msgid "code object being executed in this frame"
-msgstr ""
+msgstr "objet code exécuté dans le cadre courant"
 
 #: library/inspect.rst:129
 msgid "f_globals"
@@ -265,7 +286,7 @@ msgstr "f_globals"
 
 #: library/inspect.rst:129
 msgid "global namespace seen by this frame"
-msgstr ""
+msgstr "espace de nommage global tel que vu par cadre courant"
 
 #: library/inspect.rst:132
 msgid "f_lasti"
@@ -281,7 +302,7 @@ msgstr "f_locals"
 
 #: library/inspect.rst:138
 msgid "local namespace seen by this frame"
-msgstr ""
+msgstr "espace de nommage local du cadre courant"
 
 #: library/inspect.rst:141
 msgid "f_trace"
@@ -289,11 +310,11 @@ msgstr "f_trace"
 
 #: library/inspect.rst:141
 msgid "tracing function for this frame, or ``None``"
-msgstr ""
+msgstr "fonction de traçage du cadre courant, ou ``None``"
 
 #: library/inspect.rst:208 library/inspect.rst:225
 msgid "code"
-msgstr ""
+msgstr "code"
 
 #: library/inspect.rst:144
 msgid "co_argcount"
@@ -304,6 +325,7 @@ msgid ""
 "number of arguments (not including keyword only arguments, \\* or \\*\\* "
 "args)"
 msgstr ""
+"nombre d'arguments (excluant les arguments *keyword-only*, \\* ou \\*\\*)"
 
 #: library/inspect.rst:149
 msgid "co_code"
@@ -311,15 +333,16 @@ msgstr "co_code"
 
 #: library/inspect.rst:149
 msgid "string of raw compiled bytecode"
-msgstr ""
+msgstr "texte du code intermédiaire compilé"
 
 #: library/inspect.rst:152
 msgid "co_cellvars"
-msgstr ""
+msgstr "co_cellvars"
 
+# scope... différent du cadre, mais dans le context cadre me semble approprié
 #: library/inspect.rst:152
 msgid "tuple of names of cell variables (referenced by containing scopes)"
-msgstr ""
+msgstr "n-uplet du nom des cellules variables (référencées par leur contexte)"
 
 #: library/inspect.rst:156
 msgid "co_consts"
@@ -327,7 +350,7 @@ msgstr "co_consts"
 
 #: library/inspect.rst:156
 msgid "tuple of constants used in the bytecode"
-msgstr ""
+msgstr "n-uplet des constantes utilisées dans le code intermédiaire"
 
 #: library/inspect.rst:159
 msgid "co_filename"
@@ -335,7 +358,7 @@ msgstr "co_filename"
 
 #: library/inspect.rst:159
 msgid "name of file in which this code object was created"
-msgstr ""
+msgstr "nom du fichier dans lequel ce code objet a été créé"
 
 #: library/inspect.rst:163
 msgid "co_firstlineno"
@@ -343,7 +366,7 @@ msgstr "co_firstlineno"
 
 #: library/inspect.rst:163
 msgid "number of first line in Python source code"
-msgstr ""
+msgstr "numéro de la première ligne dans le code source Python"
 
 #: library/inspect.rst:166
 msgid "co_flags"
@@ -353,6 +376,7 @@ msgstr "co_flags"
 msgid ""
 "bitmap of ``CO_*`` flags, read more :ref:`here <inspect-module-co-flags>`"
 msgstr ""
+"**bitmap** des options ``CO_*``, voir :ref:`aussi <inspect-module-co-flags>`"
 
 #: library/inspect.rst:170
 msgid "co_lnotab"
@@ -361,6 +385,8 @@ msgstr "co_lnotab"
 #: library/inspect.rst:170
 msgid "encoded mapping of line numbers to bytecode indices"
 msgstr ""
+"tableau de correspondance encodée des numéros de ligne aux numéros d'indices "
+"du code intermédiaire"
 
 #: library/inspect.rst:174
 msgid "co_freevars"
@@ -369,6 +395,8 @@ msgstr "co_freevars"
 #: library/inspect.rst:174
 msgid "tuple of names of free variables (referenced via a function's closure)"
 msgstr ""
+"n-uplet des noms de variables libres (référencées par une fermeture de "
+"fonction)"
 
 #: library/inspect.rst:178
 msgid "co_posonlyargcount"
@@ -376,7 +404,7 @@ msgstr "co_posonlyargcount"
 
 #: library/inspect.rst:178
 msgid "number of positional only arguments"
-msgstr ""
+msgstr "nombre d'arguments positionnels"
 
 #: library/inspect.rst:181
 msgid "co_kwonlyargcount"
@@ -384,7 +412,7 @@ msgstr "co_kwonlyargcount"
 
 #: library/inspect.rst:181
 msgid "number of keyword only arguments (not including \\*\\* arg)"
-msgstr ""
+msgstr "nombre d'arguments *keywords-only* (excluant les arguments \\*\\*)"
 
 #: library/inspect.rst:185
 msgid "co_name"
@@ -392,7 +420,7 @@ msgstr "co_name"
 
 #: library/inspect.rst:185
 msgid "name with which this code object was defined"
-msgstr ""
+msgstr "nom de l'objet code lors de sa définition"
 
 #: library/inspect.rst:188
 msgid "co_names"
@@ -400,7 +428,7 @@ msgstr "co_names"
 
 #: library/inspect.rst:188
 msgid "tuple of names of local variables"
-msgstr ""
+msgstr "n-uplet des noms des variables locales"
 
 #: library/inspect.rst:191
 msgid "co_nlocals"
@@ -408,7 +436,7 @@ msgstr "co_nlocals"
 
 #: library/inspect.rst:191
 msgid "number of local variables"
-msgstr ""
+msgstr "nombre de variables locales"
 
 #: library/inspect.rst:193
 msgid "co_stacksize"
@@ -416,7 +444,7 @@ msgstr "co_stacksize"
 
 #: library/inspect.rst:193
 msgid "virtual machine stack space required"
-msgstr ""
+msgstr "espace requise pour la pile de la machine virtuelle"
 
 #: library/inspect.rst:196
 msgid "co_varnames"
@@ -424,15 +452,16 @@ msgstr "co_varnames"
 
 #: library/inspect.rst:196
 msgid "tuple of names of arguments and local variables"
-msgstr ""
+msgstr "n-uplet des noms des arguments et variables locales"
 
+# ceci ne devrait pas être traduit - c'est un type
 #: library/inspect.rst:200
 msgid "generator"
-msgstr "générateur"
+msgstr "generator"
 
 #: library/inspect.rst:214
 msgid "name"
-msgstr ""
+msgstr "nom"
 
 #: library/inspect.rst:204
 msgid "gi_frame"
@@ -444,7 +473,7 @@ msgstr "gi_running"
 
 #: library/inspect.rst:206
 msgid "is the generator running?"
-msgstr ""
+msgstr "est-ce que le générateur est en fonction ?"
 
 #: library/inspect.rst:208
 msgid "gi_code"
@@ -456,7 +485,7 @@ msgstr "gi_yieldfrom"
 
 #: library/inspect.rst:210
 msgid "object being iterated by ``yield from``, or ``None``"
-msgstr ""
+msgstr "objet pointé par l'itérateur ``yield from``, ou ``None``"
 
 #: library/inspect.rst:214
 msgid "coroutine"
@@ -468,7 +497,7 @@ msgstr "cr_await"
 
 #: library/inspect.rst:218
 msgid "object being awaited on, or ``None``"
-msgstr ""
+msgstr "objet sur lequel on attend présentement, ou ``None``"
 
 #: library/inspect.rst:221
 msgid "cr_frame"
@@ -480,7 +509,7 @@ msgstr "cr_running"
 
 #: library/inspect.rst:223
 msgid "is the coroutine running?"
-msgstr ""
+msgstr "est-ce que la coroutine est en cours ?"
 
 #: library/inspect.rst:225
 msgid "cr_code"
@@ -488,23 +517,26 @@ msgstr "cr_code"
 
 #: library/inspect.rst:227
 msgid "cr_origin"
-msgstr ""
+msgstr "cr_origin"
 
+# pas certain de comment gérer la référence | ... |, s'il y a lieu
 #: library/inspect.rst:227
+#, fuzzy
 msgid "where coroutine was created, or ``None``. See |coroutine-origin-link|"
 msgstr ""
+"lieu de création de la coroutine, ou ``None``. Voir |coroutine-origin-link|"
 
 #: library/inspect.rst:231
 msgid "builtin"
-msgstr ""
+msgstr "builtin"
 
 #: library/inspect.rst:233
 msgid "original name of this function or method"
-msgstr ""
+msgstr "nom originel de cette fonction ou méthode"
 
 #: library/inspect.rst:238
 msgid "instance to which a method is bound, or ``None``"
-msgstr ""
+msgstr "instance à laquelle est liée une méthode, ou ``None``"
 
 #: library/inspect.rst:245
 msgid "Add ``__qualname__`` and ``gi_yieldfrom`` attributes to generators."
