@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 16:00+0200\n"
-"PO-Revision-Date: 2020-12-02 20:24-0500\n"
+"PO-Revision-Date: 2020-12-03 08:51-0500\n"
 "Last-Translator: Franck Vachon <logicOnAbstractions@gmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
@@ -520,7 +520,6 @@ msgstr "cr_origin"
 
 # pas certain de comment gérer la référence | ... |, s'il y a lieu
 #: library/inspect.rst:227
-#, fuzzy
 msgid "where coroutine was created, or ``None``. See |coroutine-origin-link|"
 msgstr ""
 "lieu de création de la coroutine, ou ``None``. Voir |coroutine-origin-link|"
@@ -540,24 +539,33 @@ msgstr "instance à laquelle est liée une méthode, ou ``None``"
 #: library/inspect.rst:245
 msgid "Add ``__qualname__`` and ``gi_yieldfrom`` attributes to generators."
 msgstr ""
+"Ajout des attributs ``__qualname`` et ``gi_yieldfrom`` aux générateurs."
 
 #: library/inspect.rst:247
+#, fuzzy
 msgid ""
 "The ``__name__`` attribute of generators is now set from the function name, "
 "instead of the code name, and it can now be modified."
 msgstr ""
+"L'attribut ``__name__`` du générateur est maintenant déterminé par le nom de "
+"la fonction, plutôt que le nom du code, et peut maintenant être modifié."
 
 #: library/inspect.rst:252
 msgid "Add ``cr_origin`` attribute to coroutines."
-msgstr ""
+msgstr "Ajout de l'attribut ``cr_origin`` aux coroutines."
 
 #: library/inspect.rst:256
+#, fuzzy
 msgid ""
 "Return all the members of an object in a list of ``(name, value)`` pairs "
 "sorted by name. If the optional *predicate* argument—which will be called "
 "with the ``value`` object of each member—is supplied, only members for which "
 "the predicate returns a true value are included."
 msgstr ""
+"Retourne tous les membres d'un objet dans une liste ``(nom, valeur)``, "
+"ordonnés par nom. Si l'argument *predicate*—qui sera appelé avec la valeur "
+"de l'objet de chaque membre—est fourni, seuls les membres pour lequel le "
+"prédicat est vrai seront inclus."
 
 #: library/inspect.rst:263
 msgid ""
@@ -565,8 +573,13 @@ msgid ""
 "metaclass when the argument is a class and those attributes have been listed "
 "in the metaclass' custom :meth:`__dir__`."
 msgstr ""
+":func:`getmembers` retourne les attributs de classe définis dans la "
+"métaclasse seulement lorsque l'argument est une classe et que ces attributs "
+"ont été listés dans la méthode personnalisée :meth:`__dir__` de cette "
+"métaclasse."
 
 #: library/inspect.rst:270
+#, fuzzy
 msgid ""
 "Return the name of the module named by the file *path*, without including "
 "the names of enclosing packages. The file extension is checked against all "
@@ -574,6 +587,11 @@ msgid ""
 "the final path component is returned with the extension removed. Otherwise, "
 "``None`` is returned."
 msgstr ""
+"Retourne le nom du module nommée par le *path*, excluant le nom des paquets "
+"englobants. L'extension du fichier est vérifiée par rapport à toutes les "
+"entrées retournées par :func:`importlib.machinery.all_suffixes`. S'il y a "
+"une correspondance, le chemin final est retourné, sans l'extension. "
+"Autrement, ``None`` est retourné."
 
 #: library/inspect.rst:276
 msgid ""
@@ -581,119 +599,155 @@ msgid ""
 "modules - paths that potentially refer to Python packages will still return "
 "``None``."
 msgstr ""
+"Notez que cette fonction retourne *seulement* un nom significatif pour les "
+"modules Python - les chemins qui réfèrent à de potentiels paquets Python "
+"retourneront toujours ``None``."
 
 #: library/inspect.rst:280
 msgid "The function is based directly on :mod:`importlib`."
-msgstr ""
+msgstr "La fonction est basée directement sur :mod:`importlib`."
 
 #: library/inspect.rst:286
 msgid "Return ``True`` if the object is a module."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est un module."
 
 #: library/inspect.rst:291
+#, fuzzy
 msgid ""
 "Return ``True`` if the object is a class, whether built-in or created in "
 "Python code."
 msgstr ""
+"Retourne ``True`` si l'objet est une classe, qu'il s'agisse d'un *built-in* "
+"ou qu'il soit une création de code Python."
 
 #: library/inspect.rst:297
 msgid "Return ``True`` if the object is a bound method written in Python."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est une méthode liée écrite en Python."
 
 #: library/inspect.rst:302
 msgid ""
 "Return ``True`` if the object is a Python function, which includes functions "
 "created by a :term:`lambda` expression."
 msgstr ""
+"Retourne ``True`` si l'objet est une fonction Python, ce qui inclut les "
+"fonctions créées par expression :term:`lambda`."
 
 #: library/inspect.rst:308
 msgid "Return ``True`` if the object is a Python generator function."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet python est un générateur."
 
 #: library/inspect.rst:310
+#, fuzzy
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a Python generator function."
 msgstr ""
+"Les fonctions englobée dans :func:`functools.partial` retourne ``True`` si "
+"la fonction englobée est un générateur Python."
 
 #: library/inspect.rst:317
 msgid "Return ``True`` if the object is a generator."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est un générateur."
 
 #: library/inspect.rst:322
+#, fuzzy
 msgid ""
 "Return ``True`` if the object is a :term:`coroutine function` (a function "
 "defined with an :keyword:`async def` syntax)."
 msgstr ""
+"Retourne ``True`` si l'objet est une :term:`fonction coroutine <coroutine "
+"function`> (une fonction définie avec une syntaxe :keyword:`async def`)."
 
 #: library/inspect.rst:327
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a :term:`coroutine function`."
 msgstr ""
+"Les fonctions englobées par :func:`functools.partial` retournent maintenant "
+"``True`` si la fonction englobée est une fonction :term:`fonction coroutine "
+"<coroutine function>`."
 
 #: library/inspect.rst:334
 msgid ""
 "Return ``True`` if the object is a :term:`coroutine` created by an :keyword:"
 "`async def` function."
 msgstr ""
+"Retourne ``True`` si l'objet est une :term:`coroutine <coroutine>` créée par "
+"une fonction :keyword:`asynx def`."
 
 #: library/inspect.rst:342
 msgid ""
 "Return ``True`` if the object can be used in :keyword:`await` expression."
 msgstr ""
+"Retourne ``True`` si l'objet peut être utilisé par une expression :keyword:"
+"`await`."
 
 #: library/inspect.rst:344
 msgid ""
 "Can also be used to distinguish generator-based coroutines from regular "
 "generators::"
 msgstr ""
+"Peut aussi être utilisé pour distinguer les coroutines basées sur un "
+"générateur des générateurs réguliers :"
 
 #: library/inspect.rst:361
 msgid ""
 "Return ``True`` if the object is an :term:`asynchronous generator` function, "
 "for example::"
 msgstr ""
+"Retourne ``True`` si l'objet est une fonction :term:`générateur asynchrone "
+"<asynchronous generator>`, par exemple :"
 
 #: library/inspect.rst:372
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a :term:`asynchronous generator` function."
 msgstr ""
+"Les fonctions englobées par :func:`functools.partial` retournent maintenant "
+"``True`` si la fonction englobée est une fonction :term:`générateur "
+"asynchrone <asynchronous generator>`."
 
 #: library/inspect.rst:379
 msgid ""
 "Return ``True`` if the object is an :term:`asynchronous generator iterator` "
 "created by an :term:`asynchronous generator` function."
 msgstr ""
+"Retourne ``True`` si l'objet est un :term:`itérateur de générateur "
+"asynchrone <asynchronous generator iterator>`créé par une fonction :term:"
+"`générateur asynchrone <asynchronous generator>`."
 
 #: library/inspect.rst:386
 msgid "Return ``True`` if the object is a traceback."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est une trace d'exécution."
 
 #: library/inspect.rst:391
 msgid "Return ``True`` if the object is a frame."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est un cadre."
 
 #: library/inspect.rst:396
 msgid "Return ``True`` if the object is a code."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est un code."
 
 #: library/inspect.rst:401
 msgid ""
 "Return ``True`` if the object is a built-in function or a bound built-in "
 "method."
 msgstr ""
+"Retourne ``True`` si l'objet est une fonction native ou une méthode liée "
+"native."
 
 #: library/inspect.rst:406
+#, fuzzy
 msgid ""
 "Return ``True`` if the object is a user-defined or built-in function or "
 "method."
 msgstr ""
+"Retourne ``True`` si l'objet est définit par l'usager ou une fonction native "
+"ou méthode."
 
 #: library/inspect.rst:411
 msgid "Return ``True`` if the object is an abstract base class."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est une classe abstraite de base."
 
 #: library/inspect.rst:416
 msgid ""
@@ -701,6 +755,8 @@ msgid ""
 "`ismethod`, :func:`isclass`, :func:`isfunction` or :func:`isbuiltin` are "
 "true."
 msgstr ""
+"Retourne ``True`` si l'objet est un descripteur de méthode sauf si :fun:"
+"`ismethod`, :func:`isclass`, :fun:`isfunction` ou :func:`isbuiltin` est vrai."
 
 #: library/inspect.rst:420
 msgid ""
@@ -709,6 +765,10 @@ msgid ""
 "method, but beyond that the set of attributes varies.  A :attr:`~definition."
 "__name__` attribute is usually sensible, and :attr:`__doc__` often is."
 msgstr ""
+"Cela est par exemple vrai pour ``int.__add__``. Un objet qui passe ce test a "
+"une méthode :meth:`~object.__get__`, pas de méthode :meth:`~object.__set__`, "
+"mais autrement les attributs membres varient. Un attribut :att:`~definition."
+"__name__` sera souvent présent et :att:`__doc__` également."
 
 #: library/inspect.rst:426
 msgid ""
@@ -720,7 +780,7 @@ msgstr ""
 
 #: library/inspect.rst:434
 msgid "Return ``True`` if the object is a data descriptor."
-msgstr ""
+msgstr "Retourn ``True`` si l'objet est une descripteur de données."
 
 #: library/inspect.rst:436
 msgid ""
@@ -732,6 +792,14 @@ msgid ""
 "`~definition.__name__` and :attr:`__doc__` attributes (properties, getsets, "
 "and members have both of these attributes), but this is not guaranteed."
 msgstr ""
+"Les descripteurs de données on une méthode :attr:`~object.__set__` ou :attr:"
+"`~object.__delete__`. Par exemple les propriétés (définies en Python), "
+"getsets et les membres. Les 2 derniers sont définis en C et il existe des "
+"tests plus spécifiques disponibles pour ceux-ci qui sont robustes à travers "
+"les implémentations Python. Typiquement, les descripteurs de données auront "
+"aussi les attributs :attr:`~definition.__name__` et :attr:`~definition."
+"__doc__` (les propriétés, getsets et membres auront les deux), mais cela "
+"n'est pas garanti."
 
 #: library/inspect.rst:447
 msgid "Return ``True`` if the object is a getset descriptor."
