@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 16:00+0200\n"
-"PO-Revision-Date: 2020-12-03 08:51-0500\n"
+"PO-Revision-Date: 2020-12-03 14:59-0500\n"
 "Last-Translator: Franck Vachon <logicOnAbstractions@gmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
@@ -542,7 +542,6 @@ msgstr ""
 "Ajout des attributs ``__qualname`` et ``gi_yieldfrom`` aux générateurs."
 
 #: library/inspect.rst:247
-#, fuzzy
 msgid ""
 "The ``__name__`` attribute of generators is now set from the function name, "
 "instead of the code name, and it can now be modified."
@@ -555,7 +554,6 @@ msgid "Add ``cr_origin`` attribute to coroutines."
 msgstr "Ajout de l'attribut ``cr_origin`` aux coroutines."
 
 #: library/inspect.rst:256
-#, fuzzy
 msgid ""
 "Return all the members of an object in a list of ``(name, value)`` pairs "
 "sorted by name. If the optional *predicate* argument—which will be called "
@@ -563,9 +561,9 @@ msgid ""
 "the predicate returns a true value are included."
 msgstr ""
 "Retourne tous les membres d'un objet dans une liste ``(nom, valeur)``, "
-"ordonnés par nom. Si l'argument *predicate*—qui sera appelé avec la valeur "
-"de l'objet de chaque membre—est fourni, seuls les membres pour lequel le "
-"prédicat est vrai seront inclus."
+"ordonnées par nom. Si l'argument *predicate*—qui sera appelé avec la "
+"``valeur`` de l'objet de chaque membre—est fourni, seuls les membres pour "
+"lequel le prédicat est vrai seront inclus."
 
 #: library/inspect.rst:263
 msgid ""
@@ -579,7 +577,6 @@ msgstr ""
 "métaclasse."
 
 #: library/inspect.rst:270
-#, fuzzy
 msgid ""
 "Return the name of the module named by the file *path*, without including "
 "the names of enclosing packages. The file extension is checked against all "
@@ -587,7 +584,7 @@ msgid ""
 "the final path component is returned with the extension removed. Otherwise, "
 "``None`` is returned."
 msgstr ""
-"Retourne le nom du module nommée par le *path*, excluant le nom des paquets "
+"Retourne le nom du module indiqué par le *path*, excluant le nom des paquets "
 "englobants. L'extension du fichier est vérifiée par rapport à toutes les "
 "entrées retournées par :func:`importlib.machinery.all_suffixes`. S'il y a "
 "une correspondance, le chemin final est retourné, sans l'extension. "
@@ -599,7 +596,7 @@ msgid ""
 "modules - paths that potentially refer to Python packages will still return "
 "``None``."
 msgstr ""
-"Notez que cette fonction retourne *seulement* un nom significatif pour les "
+"Notez que cette fonction retourne un nom significatif *seulement* pour les "
 "modules Python - les chemins qui réfèrent à de potentiels paquets Python "
 "retourneront toujours ``None``."
 
@@ -612,12 +609,11 @@ msgid "Return ``True`` if the object is a module."
 msgstr "Retourne ``True`` si l'objet est un module."
 
 #: library/inspect.rst:291
-#, fuzzy
 msgid ""
 "Return ``True`` if the object is a class, whether built-in or created in "
 "Python code."
 msgstr ""
-"Retourne ``True`` si l'objet est une classe, qu'il s'agisse d'un *built-in* "
+"Retourne ``True`` si l'objet est une classe, qu'il s'agisse d'un objet natif "
 "ou qu'il soit une création de code Python."
 
 #: library/inspect.rst:297
@@ -630,19 +626,18 @@ msgid ""
 "created by a :term:`lambda` expression."
 msgstr ""
 "Retourne ``True`` si l'objet est une fonction Python, ce qui inclut les "
-"fonctions créées par expression :term:`lambda`."
+"fonctions créées par une expression :term:`lambda`."
 
 #: library/inspect.rst:308
 msgid "Return ``True`` if the object is a Python generator function."
 msgstr "Retourne ``True`` si l'objet python est un générateur."
 
 #: library/inspect.rst:310
-#, fuzzy
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a Python generator function."
 msgstr ""
-"Les fonctions englobée dans :func:`functools.partial` retourne ``True`` si "
+"Les fonctions englobée dans :func:`functools.partial` retournent ``True`` si "
 "la fonction englobée est un générateur Python."
 
 #: library/inspect.rst:317
@@ -650,7 +645,6 @@ msgid "Return ``True`` if the object is a generator."
 msgstr "Retourne ``True`` si l'objet est un générateur."
 
 #: library/inspect.rst:322
-#, fuzzy
 msgid ""
 "Return ``True`` if the object is a :term:`coroutine function` (a function "
 "defined with an :keyword:`async def` syntax)."
@@ -737,7 +731,6 @@ msgstr ""
 "native."
 
 #: library/inspect.rst:406
-#, fuzzy
 msgid ""
 "Return ``True`` if the object is a user-defined or built-in function or "
 "method."
@@ -771,12 +764,18 @@ msgstr ""
 "__name__` sera souvent présent et :att:`__doc__` également."
 
 #: library/inspect.rst:426
+#, fuzzy
 msgid ""
 "Methods implemented via descriptors that also pass one of the other tests "
 "return ``False`` from the :func:`ismethoddescriptor` test, simply because "
 "the other tests promise more -- you can, e.g., count on having the :attr:"
 "`__func__` attribute (etc) when an object passes :func:`ismethod`."
 msgstr ""
+"Les méthodes implémentées via descripteurs et qui passent l'un ou l'autre "
+"des tests retourne ``False`` pour :func:`ismethoddescriptor`, simplement "
+"parce que les autres tests guarantissent davantage -- vous pouvez supposer "
+"l'existence d'un attribut :attr:` __func__` (etc.) lorsqu'un objet retourne "
+"``True`` pour :func:`ismethod`."
 
 #: library/inspect.rst:434
 msgid "Return ``True`` if the object is a data descriptor."
@@ -794,16 +793,16 @@ msgid ""
 msgstr ""
 "Les descripteurs de données on une méthode :attr:`~object.__set__` ou :attr:"
 "`~object.__delete__`. Par exemple les propriétés (définies en Python), "
-"getsets et les membres. Les 2 derniers sont définis en C et il existe des "
+"*getsets* et les membres. Les 2 derniers sont définis en C et il existe des "
 "tests plus spécifiques disponibles pour ceux-ci qui sont robustes à travers "
 "les implémentations Python. Typiquement, les descripteurs de données auront "
 "aussi les attributs :attr:`~definition.__name__` et :attr:`~definition."
-"__doc__` (les propriétés, getsets et membres auront les deux), mais cela "
+"__doc__` (les propriétés, *getsets* et membres auront les deux), mais cela "
 "n'est pas garanti."
 
 #: library/inspect.rst:447
 msgid "Return ``True`` if the object is a getset descriptor."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est un descripteur *getset*."
 
 #: library/inspect.rst:451
 msgid ""
@@ -811,10 +810,14 @@ msgid ""
 "`PyGetSetDef` structures.  For Python implementations without such types, "
 "this method will always return ``False``."
 msgstr ""
+"*getsets* sont des attributs définis dans des extensions de modules via des "
+"structures :c:type:`PyGetSetDef`. Pour les implémentations Python ne "
+"possédant pas ces types, cette méthode retourne toujours ``False``."
 
 #: library/inspect.rst:458
+#, fuzzy
 msgid "Return ``True`` if the object is a member descriptor."
-msgstr ""
+msgstr "Retourne ``True`` si l'objet est un membre descripteur."
 
 #: library/inspect.rst:462
 msgid ""
@@ -822,10 +825,13 @@ msgid ""
 "`PyMemberDef` structures.  For Python implementations without such types, "
 "this method will always return ``False``."
 msgstr ""
+"Les membres descripteurs sont des attributs définis dans des extensions de "
+"modules via des structures :c:type:`PyMemberDef`. Pour les implémentations "
+"Python ne possédant pas ces types, cette méthode retourne toujours ``False``."
 
 #: library/inspect.rst:470
 msgid "Retrieving source code"
-msgstr ""
+msgstr "Récupération du code source"
 
 #: library/inspect.rst:474
 msgid ""
@@ -834,10 +840,16 @@ msgid ""
 "the object is a class, a method, a property or a descriptor, retrieve the "
 "documentation string from the inheritance hierarchy."
 msgstr ""
+"Obtient la chaîne de documentation, nettoyée par :func:`cleandoc`. Si la "
+"chaîne de documentation pour un objet n'est pas fournie et que l'objet est "
+"une classe, une méthode, une propriété ou un descripteur, récupère la chaîne "
+"de documentation par la hiérarchie d'héritage."
 
 #: library/inspect.rst:479
 msgid "Documentation strings are now inherited if not overridden."
 msgstr ""
+"Les chaînes de documentation sont maintenant héritées si elles ne sont pas "
+"surchargées."
 
 #: library/inspect.rst:485
 msgid ""
@@ -847,6 +859,12 @@ msgid ""
 "code is unavailable, return ``None``.  This could happen if the object has "
 "been defined in C or the interactive shell."
 msgstr ""
+"Retourne en une chaîne de caractères toute ligne de commentaires qui précède "
+"immédiatement le code source de l'objet (pour une classe, fonction ou "
+"méthode) ou en début d'un fichier de code source Python (si l'objet est un "
+"module). Si le code source de l'objet n'est pas disponible, retourne "
+"``None``. Cela peut se produire si l'objet a été défini en C ou dans une "
+"interpréteur interactif."
 
 #: library/inspect.rst:494
 msgid ""
@@ -854,10 +872,13 @@ msgid ""
 "This will fail with a :exc:`TypeError` if the object is a built-in module, "
 "class, or function."
 msgstr ""
+"Retourne le nom du fichier (texte ou binaire) dans lequel un objet a été "
+"défini. Cette méthode échoue avec :exc:`TypeError` si l'objet est un module, "
+"classe ou fonction native."
 
 #: library/inspect.rst:501
 msgid "Try to guess which module an object was defined in."
-msgstr ""
+msgstr "Tente de déterminer le module dans lequel l'objet a été définit."
 
 #: library/inspect.rst:506
 msgid ""
@@ -865,6 +886,9 @@ msgid ""
 "This will fail with a :exc:`TypeError` if the object is a built-in module, "
 "class, or function."
 msgstr ""
+"Retourne le nom du fichier source Python dans lequel l'objet a été définit. "
+"Cela échoue avec :exc:`TypeError` si l'objet est un module, classe ou "
+"fonction native."
 
 #: library/inspect.rst:513
 msgid ""
@@ -875,12 +899,20 @@ msgid ""
 "the first line of code was found.  An :exc:`OSError` is raised if the source "
 "code cannot be retrieved."
 msgstr ""
+"Retourne une liste de lignes sources et le numéro de ligne de départ pour un "
+"objet. L'argument peut être un module, classe, méthode, fonction, trace "
+"d'exécution, cadre ou objet code. Le code source est retourné comme une "
+"liste de ligne correspondant à l'objet, et le numéro de ligne indique la "
+"position à laquelle la première ligne de code a été trouvée. Une :exc:"
+"`OSError` est levée si le code source ne peut être retrouvé."
 
 #: library/inspect.rst:532
 msgid ""
 ":exc:`OSError` is raised instead of :exc:`IOError`, now an alias of the "
 "former."
 msgstr ""
+":exc:`OSError` est levé plutôt que :exc:`IOError`, qui est maintenant un "
+"alias de ce premier."
 
 #: library/inspect.rst:527
 msgid ""
@@ -889,12 +921,18 @@ msgid ""
 "source code is returned as a single string.  An :exc:`OSError` is raised if "
 "the source code cannot be retrieved."
 msgstr ""
+"Retourne le texte du code source pour un objet. L'argument peut être un "
+"module, classe, méthode, fonction, trace d'exécution, cadre ou objet code. "
+"Le code source est retournée comme une seule chaîne de caractères. :exc:"
+"`OSError` est levé si le code source ne peut être retrouvé."
 
 #: library/inspect.rst:539
 msgid ""
 "Clean up indentation from docstrings that are indented to line up with "
 "blocks of code."
 msgstr ""
+"Nettoie les indentations des chaînes de documentation qui sont indentées de "
+"manières à s'aligner avec les blocs de code."
 
 #: library/inspect.rst:542
 msgid ""
@@ -903,47 +941,71 @@ msgid ""
 "removed.  Empty lines at the beginning and end are subsequently removed.  "
 "Also, all tabs are expanded to spaces."
 msgstr ""
+"Enlève tous les espaces blancs en début de ligne à partir de la première. "
+"Tout espace blanc en début de ligne qui puisse être enlevé de manière "
+"uniforme à partir de la seconde ligne le sera. Les lignes vides en début et "
+"en fin de document seront enlevées. Les tabulations seront converties en "
+"espaces."
 
 #: library/inspect.rst:551
+#, fuzzy
 msgid "Introspecting callables with the Signature object"
-msgstr ""
+msgstr "Instrospection des appelables avec l'objet Signature"
 
 #: library/inspect.rst:555
+#, fuzzy
 msgid ""
 "The Signature object represents the call signature of a callable object and "
 "its return annotation.  To retrieve a Signature object, use the :func:"
 "`signature` function."
 msgstr ""
+"L'objet Signature représente la signature de l'appel d'un objet appelable et "
+"sont annotation de retour. Pour retrouver l'objet Signature, utilisez la "
+"fonction :fun:`signature`."
 
 #: library/inspect.rst:561
+#, fuzzy
 msgid "Return a :class:`Signature` object for the given ``callable``::"
-msgstr ""
+msgstr "Retourne un objet :class`Signature` pour un ``callable`` :"
 
 #: library/inspect.rst:578
 msgid ""
 "Accepts a wide range of Python callables, from plain functions and classes "
 "to :func:`functools.partial` objects."
 msgstr ""
+"La fonction accepte une grande étendue d'appelables Python, des fonctions et "
+"classes jusqu'aux objets :func:`functools.partials`."
 
 #: library/inspect.rst:581
 msgid ""
 "Raises :exc:`ValueError` if no signature can be provided, and :exc:"
 "`TypeError` if that type of object is not supported."
 msgstr ""
+"Lève une :exc:`ValueError` si aucune signature n'est donnée et :exc:"
+"`TypeError` si ce type d'objet n'est pas supporté."
 
 #: library/inspect.rst:584
+#, fuzzy
 msgid ""
 "A slash(/) in the signature of a function denotes that the parameters prior "
 "to it are positional-only. For more info, see :ref:`the FAQ entry on "
 "positional-only parameters <faq-positional-only-arguments>`."
 msgstr ""
+"Un slash(/) dans la signature d'une fonction dénote que les paramètres qui "
+"précèdent sont positionnels seulement. Pour plus d'information,voir :ref:"
+"`the FAQ entry on positional-only parameters <faq-positional-only-"
+"arguments>`."
 
 #: library/inspect.rst:588
+#, fuzzy
 msgid ""
 "``follow_wrapped`` parameter. Pass ``False`` to get a signature of "
 "``callable`` specifically (``callable.__wrapped__`` will not be used to "
 "unwrap decorated callables.)"
 msgstr ""
+"Paramètre ``follow_wrapped``. Passer ``False`` pour obtenir une signature "
+"``callable`` plus spécifiquement (``callable.__wrapped__`` ne sera pas "
+"utilisé pour dépouiller un appelable décoré.)"
 
 #: library/inspect.rst:595
 msgid ""
@@ -951,13 +1013,20 @@ msgid ""
 "Python.  For example, in CPython, some built-in functions defined in C "
 "provide no metadata about their arguments."
 msgstr ""
+"Certains appelables ne peuvent être introspectées dans certain environnement "
+"Python. Par exemple, en CPython, certaines fonctions natives définies en C "
+"ne fournissent aucune métadonnée sur leurs arguments."
 
 #: library/inspect.rst:602
+#, fuzzy
 msgid ""
 "A Signature object represents the call signature of a function and its "
 "return annotation.  For each parameter accepted by the function it stores a :"
 "class:`Parameter` object in its :attr:`parameters` collection."
 msgstr ""
+"L'objet Signature représente la signature d'appel d'une fonction et sont "
+"retour d'annotation. Pour chaque paramètre accepté par une fonction, il "
+"conserve un objet :class:`Parameter` dans sa collection :attr:`parameters`."
 
 #: library/inspect.rst:606
 msgid ""
@@ -967,26 +1036,39 @@ msgid ""
 "positional-only first, then positional-or-keyword, and that parameters with "
 "defaults follow parameters without defaults."
 msgstr ""
+"L'argument optionel *parameters* est une séquence d'objet :class:"
+"`Parameters`, qui permet de vérifier qu'il n'y a pas de duplication de noms "
+"de paramètres, que les paramètres sont dans le bon ordre (positionnels "
+"d'abord, positionnels ou nommés ensuite et que les paramètres avec valeurs "
+"par défaut sont placés après ceux qui n'en ont pas)."
 
 #: library/inspect.rst:612
 msgid ""
 "The optional *return_annotation* argument, can be an arbitrary Python "
 "object, is the \"return\" annotation of the callable."
 msgstr ""
+"L'argument optionnel *return_annotation* pouvant être un objet python "
+"arbitraire, est le retour d'annotation d'un appelable."
 
 #: library/inspect.rst:615
 msgid ""
 "Signature objects are *immutable*.  Use :meth:`Signature.replace` to make a "
 "modified copy."
 msgstr ""
+"Les objets Signatures sont *immuables*. Utilisez :meth:`Signature.replace` "
+"pour en faire une copie modifiée."
 
 #: library/inspect.rst:618
 msgid "Signature objects are picklable and hashable."
 msgstr ""
+"Les objets Signature sont *pickable* (sérialisables avec Pickle) et "
+"hachables."
 
 #: library/inspect.rst:623
 msgid "A special class-level marker to specify absence of a return annotation."
 msgstr ""
+"Un marqueur spécial de classe pour spécifier l'absence d'un retour "
+"d'annotation."
 
 #: library/inspect.rst:627
 msgid ""
@@ -994,6 +1076,9 @@ msgid ""
 "`Parameter` objects.  Parameters appear in strict definition order, "
 "including keyword-only parameters."
 msgstr ""
+"Une table de correspondance ordonnée des noms de paramètres avec les objets :"
+"class`Parameter`. Les paramètres apparaissent dans l'ordre stricte de leur "
+"définition, incluant les paramètres exclusivement nommés."
 
 #: library/inspect.rst:971
 msgid ""
@@ -1001,12 +1086,17 @@ msgid ""
 "keyword-only parameters as of version 3.7, although in practice this order "
 "had always been preserved in Python 3."
 msgstr ""
+"Python ne garantie explicitement la préservation de l'ordre des paramètres "
+"exclusivement nommés que depuis la version 3.7, bien qu'en pratique cet "
+"ordre a toujours été préservé sous Python 3."
 
 #: library/inspect.rst:638
 msgid ""
 "The \"return\" annotation for the callable.  If the callable has no \"return"
 "\" annotation, this attribute is set to :attr:`Signature.empty`."
 msgstr ""
+"L'annotation de retour de l'appelable. Si l'appelable n'a pas de retour "
+"d'annotation, cet attribut est évalué à :attr:`Signature.empty`."
 
 #: library/inspect.rst:643
 msgid ""
@@ -1014,6 +1104,9 @@ msgid ""
 "Returns :class:`BoundArguments` if ``*args`` and ``**kwargs`` match the "
 "signature, or raises a :exc:`TypeError`."
 msgstr ""
+"Crée une table de correspondance entre les arguments positionnels et nommés "
+"avec les paramètres. Retourne :class:`BoundArguments` si ``*args`` et "
+"``**kwargs`` concordent avec la signature, autrement lève :exc:`TypeError`."
 
 #: library/inspect.rst:649
 msgid ""
@@ -1022,6 +1115,10 @@ msgid ""
 "Returns :class:`BoundArguments`, or raises a :exc:`TypeError` if the passed "
 "arguments do not match the signature."
 msgstr ""
+"Fonctionne de manière similaireà :meth:`Signature.bind`, mais permet "
+"l'omission de certains arguments (semblable au comportement de :func:"
+"`functools.partial`). Retourne :class:`BoundArguments`, ou lève :exc:"
+"`TypeError` si l'argument passé ne correspond pas à la signature."
 
 #: library/inspect.rst:656
 msgid ""
