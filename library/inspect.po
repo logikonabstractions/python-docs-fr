@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 16:00+0200\n"
-"PO-Revision-Date: 2020-11-19 08:43-0500\n"
+"PO-Revision-Date: 2020-12-02 20:24-0500\n"
 "Last-Translator: Franck Vachon <logicOnAbstractions@gmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
@@ -46,7 +46,7 @@ msgid ""
 "checking, getting source code, inspecting classes and functions, and "
 "examining the interpreter stack."
 msgstr ""
-"Ce module donne accès à 4 types de services : vérification de typage, "
+"Ce module donne accès à 4 types de services : vérification de typage, "
 "obtention de code source, inspection de classes et de fonctions et examen de "
 "la pile d'exécution."
 
@@ -66,7 +66,7 @@ msgstr ""
 "classe ou un module. Les fonctions avec préfixe *is* sont surtout offertes "
 "comme choix pratique de deuxième argument à :func:`getmembers`. Elles "
 "permettent aussi de déterminer si on peut s'attendre à trouver les attributs "
-"spéciaux suivants :"
+"spéciaux suivants :"
 
 #: library/inspect.rst:41
 msgid "Type"
@@ -208,7 +208,7 @@ msgid ""
 "mapping of parameters names to annotations; ``\"return\"`` key is reserved "
 "for return annotations."
 msgstr ""
-"tableau de correspondance des paramètres à leur annotation ; ``\"return\"`` "
+"tableau de correspondance des paramètres à leur annotation ; ``\"return\"`` "
 "est un mot-clé réservé pour les retours d'annotations."
 
 #: library/inspect.rst:104
@@ -395,8 +395,7 @@ msgstr "co_freevars"
 #: library/inspect.rst:174
 msgid "tuple of names of free variables (referenced via a function's closure)"
 msgstr ""
-"n-uplet des noms de variables libres (référencées par une fermeture de "
-"fonction)"
+"n-uplet des noms de variables libres (référencées par une fonction fermeture)"
 
 #: library/inspect.rst:178
 msgid "co_posonlyargcount"
@@ -473,7 +472,7 @@ msgstr "gi_running"
 
 #: library/inspect.rst:206
 msgid "is the generator running?"
-msgstr "est-ce que le générateur est en fonction ?"
+msgstr "est-ce que le générateur est en cours d'exécution ?"
 
 #: library/inspect.rst:208
 msgid "gi_code"
@@ -509,7 +508,7 @@ msgstr "cr_running"
 
 #: library/inspect.rst:223
 msgid "is the coroutine running?"
-msgstr "est-ce que la coroutine est en cours ?"
+msgstr "est-ce que la coroutine est en cours d'exécution?"
 
 #: library/inspect.rst:225
 msgid "cr_code"
