@@ -181,7 +181,7 @@ msgstr "__defaults__"
 
 #: library/inspect.rst:87
 msgid "tuple of any default values for positional or keyword parameters"
-msgstr "n-uplet de valeurs par défaut pour arguments positionnels ou nommés"
+msgstr "*n*-uplet de valeurs par défaut pour arguments positionnels ou nommés"
 
 #: library/inspect.rst:91
 msgid "__kwdefaults__"
