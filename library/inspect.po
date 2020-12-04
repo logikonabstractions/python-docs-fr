@@ -17,7 +17,7 @@ msgstr ""
 
 #: library/inspect.rst:2
 msgid ":mod:`inspect` --- Inspect live objects"
-msgstr ":mod:`inspect` --- Inspection d'objets"
+msgstr ":mod:`inspect` — Inspection d'objets"
 
 #: library/inspect.rst:10
 msgid "**Source code:** :source:`Lib/inspect.py`"
