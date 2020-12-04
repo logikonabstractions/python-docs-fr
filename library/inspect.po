@@ -173,7 +173,7 @@ msgstr "__code__"
 #: library/inspect.rst:83
 msgid "code object containing compiled function :term:`bytecode`"
 msgstr ""
-"objet code contenant une fonction :term:`code intermédiaire <bytecode>`"
+"objet code contenant le :term:`code intermédiaire <bytecode>` d'une fonction compilée"
 
 #: library/inspect.rst:87
 msgid "__defaults__"
