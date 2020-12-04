@@ -189,7 +189,7 @@ msgstr "__kwdefaults__"
 
 #: library/inspect.rst:91
 msgid "mapping of any default values for keyword-only parameters"
-msgstr "tableau de correspondance de valeurs par défaut pour paramètres nommés"
+msgstr "tableau de correspondance de valeurs par défaut pour les paramètres nommés"
 
 #: library/inspect.rst:95
 msgid "__globals__"
