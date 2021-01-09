@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 16:00+0200\n"
-"PO-Revision-Date: 2021-01-08 13:09-0500\n"
+"PO-Revision-Date: 2021-01-09 18:25-0500\n"
 "Last-Translator: Franck Vachon <logicOnAbstractions@gmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
@@ -21,7 +21,7 @@ msgstr ":mod:`inspect` — Inspection d'objets"
 
 #: library/inspect.rst:10
 msgid "**Source code:** :source:`Lib/inspect.py`"
-msgstr "**Code source :** :source:`Lib/inspect.py`"
+msgstr "**Code source :** :source:`Lib/inspect.py`"
 
 #: library/inspect.rst:14
 msgid ""
@@ -244,7 +244,7 @@ msgstr "tb_next"
 
 #: library/inspect.rst:116
 msgid "next inner traceback object (called by this level)"
-msgstr "trace d'exécution interne suivante (appel par le cadre courant)"
+msgstr "trace de pile interne suivante (appel par le cadre courant)"
 
 #: library/inspect.rst:204 library/inspect.rst:221
 msgid "frame"
@@ -333,7 +333,7 @@ msgstr "co_cellvars"
 # scope... différent du cadre, mais dans le context cadre me semble approprié
 #: library/inspect.rst:152
 msgid "tuple of names of cell variables (referenced by containing scopes)"
-msgstr "n-uplet du nom des cellules variables (référencées par leur contexte)"
+msgstr "*n*-uplet du nom des cellules variables (référencées par leur contexte)"
 
 #: library/inspect.rst:156
 msgid "co_consts"
@@ -341,7 +341,7 @@ msgstr "co_consts"
 
 #: library/inspect.rst:156
 msgid "tuple of constants used in the bytecode"
-msgstr "n-uplet des constantes utilisées dans le code intermédiaire"
+msgstr "*n*-uplet des constantes utilisées dans le code intermédiaire"
 
 #: library/inspect.rst:159
 msgid "co_filename"
@@ -383,7 +383,8 @@ msgstr "co_freevars"
 
 #: library/inspect.rst:174
 msgid "tuple of names of free variables (referenced via a function's closure)"
-msgstr "n-uplet des noms de variables libres (référencées par une fonction fermeture)"
+msgstr ""
+"*n*-uplet des noms de variables libres (référencées par une fonction fermeture)"
 
 #: library/inspect.rst:178
 msgid "co_posonlyargcount"
@@ -415,7 +416,7 @@ msgstr "co_names"
 
 #: library/inspect.rst:188
 msgid "tuple of names of local variables"
-msgstr "n-uplet des noms des variables locales"
+msgstr "*n*-uplet des noms des variables locales"
 
 #: library/inspect.rst:191
 msgid "co_nlocals"
@@ -439,7 +440,7 @@ msgstr "co_varnames"
 
 #: library/inspect.rst:196
 msgid "tuple of names of arguments and local variables"
-msgstr "n-uplet des noms des arguments et variables locales"
+msgstr "*n*-uplet des noms des arguments et variables locales"
 
 # ceci ne devrait pas être traduit - c'est un type
 #: library/inspect.rst:200
@@ -460,7 +461,7 @@ msgstr "gi_running"
 
 #: library/inspect.rst:206
 msgid "is the generator running?"
-msgstr "est-ce que le générateur est en cours d'exécution ?"
+msgstr "est-ce que le générateur est en cours d'exécution?"
 
 #: library/inspect.rst:208
 msgid "gi_code"
@@ -546,7 +547,7 @@ msgid ""
 "object of each member—is supplied, only members for which the predicate returns a "
 "true value are included."
 msgstr ""
-"Retourne tous les membres d'un objet dans une liste ``(nom, valeur)``, ordonnées par "
+"Renvoie tous les membres d'un objet dans une liste ``(nom, valeur)``, ordonnées par "
 "nom. Si l'argument *predicate*—qui sera appelé avec la ``valeur`` de l'objet de "
 "chaque membre—est fourni, seuls les membres pour lequel le prédicat est vrai seront "
 "inclus."
@@ -557,7 +558,7 @@ msgid ""
 "the argument is a class and those attributes have been listed in the metaclass' "
 "custom :meth:`__dir__`."
 msgstr ""
-":func:`getmembers` retourne les attributs de classe définis dans la métaclasse "
+":func:`getmembers` renvoie les attributs de classe définis dans la métaclasse "
 "seulement lorsque l'argument est une classe et que ces attributs ont été listés dans "
 "la méthode personnalisée :meth:`__dir__` de cette métaclasse."
 
@@ -568,20 +569,19 @@ msgid ""
 "func:`importlib.machinery.all_suffixes`. If it matches, the final path component is "
 "returned with the extension removed. Otherwise, ``None`` is returned."
 msgstr ""
-"Retourne le nom du module indiqué par le *path* du fichier, excluant le nom des "
-"paquets englobants. L'extension du fichier est vérifiée parmi à toutes les entrées "
-"retournées par :func:`importlib.machinery.all_suffixes`. S'il y a une "
-"correspondance, le chemin final est retourné, sans l'extension. Autrement, ``None`` "
-"est retourné."
+"Renvoie le nom du module indiqué par le *path* du fichier, excluant le nom des "
+"paquets englobants. L'extension du fichier est vérifiée parmi toutes les entrées "
+"renvoyées par :func:`importlib.machinery.all_suffixes`. S'il y a une correspondance, "
+"le chemin final est renvoyé, sans l'extension. Autrement, ``None`` est renvoyé."
 
 #: library/inspect.rst:276
 msgid ""
 "Note that this function *only* returns a meaningful name for actual Python modules - "
 "paths that potentially refer to Python packages will still return ``None``."
 msgstr ""
-"Notez que cette fonction retourne un nom significatif *seulement* pour les modules "
-"Python - les chemins qui réfèrent à de potentiels paquets Python retourneront "
-"toujours ``None``."
+"Notez que cette fonction renvoie un nom significatif *seulement* pour les modules "
+"Python - les chemins qui réfèrent à de potentiels paquets Python donnent toujours "
+"``None``."
 
 #: library/inspect.rst:280
 msgid "The function is based directly on :mod:`importlib`."
@@ -589,49 +589,49 @@ msgstr "La fonction est basée directement sur :mod:`importlib`."
 
 #: library/inspect.rst:286
 msgid "Return ``True`` if the object is a module."
-msgstr "Retourne ``True`` si l'objet est un module."
+msgstr "Renvoie ``True`` si l'objet est un module."
 
 #: library/inspect.rst:291
 msgid ""
 "Return ``True`` if the object is a class, whether built-in or created in Python code."
 msgstr ""
-"Retourne ``True`` si l'objet est une classe, qu'il s'agisse d'un objet natif ou "
-"qu'il soit une création de code Python."
+"Renvoie ``True`` si l'objet est une classe, qu'il s'agisse d'un objet natif ou qu'il "
+"soit une création de code Python."
 
 #: library/inspect.rst:297
 msgid "Return ``True`` if the object is a bound method written in Python."
-msgstr "Retourne ``True`` si l'objet est une méthode liée écrite en Python."
+msgstr "Renvoie ``True`` si l'objet est une méthode liée écrite en Python."
 
 #: library/inspect.rst:302
 msgid ""
 "Return ``True`` if the object is a Python function, which includes functions created "
 "by a :term:`lambda` expression."
 msgstr ""
-"Retourne ``True`` si l'objet est une fonction Python, ce qui inclut les fonctions "
+"Renvoie ``True`` si l'objet est une fonction Python, ce qui inclut les fonctions "
 "créées par une expression :term:`lambda <lambda>`."
 
 #: library/inspect.rst:308
 msgid "Return ``True`` if the object is a Python generator function."
-msgstr "Retourne ``True`` si l'objet python est un générateur."
+msgstr "Renvoie ``True`` si l'objet python est un générateur."
 
 #: library/inspect.rst:310
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the wrapped "
 "function is a Python generator function."
 msgstr ""
-"Les fonctions englobée dans :func:`functools.partial` retournent ``True`` si la "
+"Les fonctions englobée dans :func:`functools.partial` renvoient ``True`` si la "
 "fonction englobée est un générateur Python."
 
 #: library/inspect.rst:317
 msgid "Return ``True`` if the object is a generator."
-msgstr "Retourne ``True`` si l'objet est un générateur."
+msgstr "Renvoie ``True`` si l'objet est un générateur."
 
 #: library/inspect.rst:322
 msgid ""
 "Return ``True`` if the object is a :term:`coroutine function` (a function defined "
 "with an :keyword:`async def` syntax)."
 msgstr ""
-"Retourne ``True`` si l'objet est une :term:`fonction coroutine <coroutine function`> "
+"Renvoie ``True`` si l'objet est une :term:`fonction coroutine <coroutine function`> "
 "(une fonction définie avec une syntaxe :keyword:`async def`)."
 
 #: library/inspect.rst:327
@@ -639,7 +639,7 @@ msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the wrapped "
 "function is a :term:`coroutine function`."
 msgstr ""
-"Les fonctions englobées par :func:`functools.partial` retournent maintenant ``True`` "
+"Les fonctions englobées par :func:`functools.partial` renvoient maintenant ``True`` "
 "si la fonction englobée est une fonction :term:`fonction coroutine <coroutine "
 "function>`."
 
@@ -648,13 +648,13 @@ msgid ""
 "Return ``True`` if the object is a :term:`coroutine` created by an :keyword:`async "
 "def` function."
 msgstr ""
-"Retourne ``True`` si l'objet est une :term:`coroutine <coroutine>` créée par une "
+"Renvoie ``True`` si l'objet est une :term:`coroutine <coroutine>` créée par une "
 "fonction :keyword:`asynx def`."
 
 #: library/inspect.rst:342
 msgid "Return ``True`` if the object can be used in :keyword:`await` expression."
 msgstr ""
-"Retourne ``True`` si l'objet peut être utilisé par une expression :keyword:`await`."
+"Renvoie ``True`` si l'objet peut être utilisé par une expression :keyword:`await`."
 
 #: library/inspect.rst:344
 msgid ""
@@ -668,7 +668,7 @@ msgid ""
 "Return ``True`` if the object is an :term:`asynchronous generator` function, for "
 "example::"
 msgstr ""
-"Retourne ``True`` si l'objet est une fonction :term:`générateur asynchrone "
+"Renvoie ``True`` si l'objet est une fonction :term:`générateur asynchrone "
 "<asynchronous generator>`, par exemple :"
 
 #: library/inspect.rst:372
@@ -676,8 +676,8 @@ msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the wrapped "
 "function is a :term:`asynchronous generator` function."
 msgstr ""
-"Les fonctions englobées par :func:`functools.partial` retournent maintenant ``True`` "
-"si la fonction englobée est une fonction :term:`générateur asynchrone <asynchronous "
+"Les fonctions englobées par :func:`functools.partial` renvoient maintenant ``True`` "
+"si la fonction englobée est une fonction :term:`génératrice asynchrone <asynchronous "
 "generator>`."
 
 #: library/inspect.rst:379
@@ -685,44 +685,44 @@ msgid ""
 "Return ``True`` if the object is an :term:`asynchronous generator iterator` created "
 "by an :term:`asynchronous generator` function."
 msgstr ""
-"Retourne ``True`` si l'objet est un :term:`itérateur de générateur asynchrone "
-"<asynchronous generator iterator>`créé par une fonction :term:`générateur asynchrone "
-"<asynchronous generator>`."
+"Renvoie ``True`` si l'objet est un :term:`itérateur de générateur asynchrone "
+"<asynchronous generator iterator>`créé par une fonction :term:`génératrice "
+"asynchrone <asynchronous generator>`."
 
 #: library/inspect.rst:386
 msgid "Return ``True`` if the object is a traceback."
-msgstr "Retourne ``True`` si l'objet est une trace d'exécution."
+msgstr "Renvoie ``True`` si l'objet est une trace d'exécution."
 
 #: library/inspect.rst:391
 msgid "Return ``True`` if the object is a frame."
-msgstr "Retourne ``True`` si l'objet est un cadre."
+msgstr "Renvoie ``True`` si l'objet est un cadre."
 
 #: library/inspect.rst:396
 msgid "Return ``True`` if the object is a code."
-msgstr "Retourne ``True`` si l'objet est un code."
+msgstr "Renvoie ``True`` si l'objet est un code."
 
 #: library/inspect.rst:401
 msgid ""
 "Return ``True`` if the object is a built-in function or a bound built-in method."
 msgstr ""
-"Retourne ``True`` si l'objet est une fonction native ou une méthode liée native."
+"Renvoie ``True`` si l'objet est une fonction native ou une méthode liée native."
 
 #: library/inspect.rst:406
 msgid "Return ``True`` if the object is a user-defined or built-in function or method."
 msgstr ""
-"Retourne ``True`` si l'objet est définit par l'usager ou une fonction native ou "
+"Renvoie ``True`` si l'objet est définit par l'usager ou une fonction native ou "
 "méthode."
 
 #: library/inspect.rst:411
 msgid "Return ``True`` if the object is an abstract base class."
-msgstr "Retourne ``True`` si l'objet est une classe abstraite de base."
+msgstr "Renvoie ``True`` si l'objet est une classe abstraite de base."
 
 #: library/inspect.rst:416
 msgid ""
 "Return ``True`` if the object is a method descriptor, but not if :func:`ismethod`, :"
 "func:`isclass`, :func:`isfunction` or :func:`isbuiltin` are true."
 msgstr ""
-"Retourne ``True`` si l'objet est un descripteur de méthode sauf si :fun:`ismethod`, :"
+"Renvoie ``True`` si l'objet est un descripteur de méthode sauf si :fun:`ismethod`, :"
 "func:`isclass`, :fun:`isfunction` ou :func:`isbuiltin` est vrai."
 
 #: library/inspect.rst:420
@@ -745,9 +745,9 @@ msgid ""
 "when an object passes :func:`ismethod`."
 msgstr ""
 "Les méthodes implémentées via descripteurs et qui passent l'un ou l'autre des tests "
-"retourne ``False`` pour :func:`ismethoddescriptor`, simplement parce que les autres "
-"tests garantissent davantage -- vous pouvez supposer l'existence d'un attribut :attr:"
-"` __func__` (etc.) lorsqu'un objet retourne ``True`` pour :func:`ismethod`."
+"renvoie ``False`` pour :func:`ismethoddescriptor`, simplement parce que les autres "
+"tests garantissent davantage — vous pouvez supposer l'existence d'un attribut :attr:"
+"` __func__` (etc.) lorsqu'un objet renvoie ``True`` pour :func:`ismethod`."
 
 #: library/inspect.rst:434
 msgid "Return ``True`` if the object is a data descriptor."
@@ -763,17 +763,17 @@ msgid ""
 "(properties, getsets, and members have both of these attributes), but this is not "
 "guaranteed."
 msgstr ""
-"Les descripteurs de données on une méthode :attr:`~object.__set__` ou :attr:`~object."
-"__delete__`. Par exemple les propriétés (définies en Python), *getsets* et les "
-"membres. Les 2 derniers sont définis en C et il existe des tests plus spécifiques "
-"disponibles pour ceux-ci qui sont robustes à travers les implémentations Python. "
-"Typiquement, les descripteurs de données auront aussi les attributs :attr:"
+"Les descripteurs de données ont une méthode :attr:`~object.__set__` ou :attr:"
+"`~object.__delete__`. Par exemple les propriétés (définies en Python), *getsets* et "
+"les membres. Les 2 derniers sont définis en C et il existe des tests plus "
+"spécifiques disponibles pour ceux-ci qui sont robustes à travers les implémentations "
+"Python. Normalement, les descripteurs de données auront aussi les attributs :attr:"
 "`~definition.__name__` et :attr:`~definition.__doc__` (les propriétés, *getsets* et "
 "membres auront les deux), mais cela n'est pas garanti."
 
 #: library/inspect.rst:447
 msgid "Return ``True`` if the object is a getset descriptor."
-msgstr "Retourne ``True`` si l'objet est un descripteur *getset*."
+msgstr "Renvoie ``True`` si l'objet est un descripteur *getset*."
 
 #: library/inspect.rst:451
 msgid ""
@@ -783,11 +783,11 @@ msgid ""
 msgstr ""
 "*getsets* sont des attributs définis dans des extensions de modules via des "
 "structures :c:type:`PyGetSetDef`. Pour les implémentations Python ne possédant pas "
-"ces types, cette méthode retourne toujours ``False``."
+"ces types, cette méthode renvoie toujours ``False``."
 
 #: library/inspect.rst:458
 msgid "Return ``True`` if the object is a member descriptor."
-msgstr "Retourne ``True`` si l'objet est un membre descripteur."
+msgstr "Renvoie ``True`` si l'objet est un membre descripteur."
 
 #: library/inspect.rst:462
 msgid ""
@@ -797,7 +797,7 @@ msgid ""
 msgstr ""
 "Les membres descripteurs sont des attributs définis dans des extensions de modules "
 "via des structures :c:type:`PyMemberDef`. Pour les implémentations Python ne "
-"possédant pas ces types, cette méthode retourne toujours ``False``."
+"possédant pas ces types, cette méthode renvoie toujours ``False``."
 
 #: library/inspect.rst:470
 msgid "Retrieving source code"
@@ -829,10 +829,10 @@ msgid ""
 "return ``None``.  This could happen if the object has been defined in C or the "
 "interactive shell."
 msgstr ""
-"Retourne en une chaîne de caractères toute ligne de commentaire qui précède "
+"Renvoie en une chaîne de caractères toute ligne de commentaire qui précède "
 "immédiatement le code source de l'objet (pour une classe, fonction ou méthode) ou en "
 "début d'un fichier de code source Python (si l'objet est un module). Si le code "
-"source de l'objet n'est pas disponible, retourne ``None``. Cela peut se produire si "
+"source de l'objet n'est pas disponible, renvoie ``None``. Cela peut se produire si "
 "l'objet a été défini en C ou dans une interpréteur interactif."
 
 #: library/inspect.rst:494
@@ -841,7 +841,7 @@ msgid ""
 "will fail with a :exc:`TypeError` if the object is a built-in module, class, or "
 "function."
 msgstr ""
-"Retourne le nom du fichier (texte ou binaire) dans lequel un objet a été défini. "
+"Renvoie le nom du fichier (texte ou binaire) dans lequel un objet a été défini. "
 "Cette méthode échoue avec :exc:`TypeError` si l'objet est un module, classe ou "
 "fonction native."
 
@@ -854,7 +854,7 @@ msgid ""
 "Return the name of the Python source file in which an object was defined.  This will "
 "fail with a :exc:`TypeError` if the object is a built-in module, class, or function."
 msgstr ""
-"Retourne le nom du fichier source Python dans lequel l'objet a été définit. Cela "
+"Renvoie le nom du fichier source Python dans lequel l'objet a été définit. Cela "
 "échoue avec :exc:`TypeError` si l'objet est natif (module, classe ou fonction)."
 
 #: library/inspect.rst:513
@@ -865,12 +865,12 @@ msgid ""
 "line number indicates where in the original source file the first line of code was "
 "found.  An :exc:`OSError` is raised if the source code cannot be retrieved."
 msgstr ""
-"Retourne une liste de lignes sources et le numéro de ligne de départ pour un objet. "
-"L'argument peut être un module, classe, méthode, fonction, trace d'exécution, cadre "
-"ou objet code. Le code source est retourné comme une liste des lignes correspondant "
-"à l'objet, et le numéro de ligne indique la position à laquelle la première ligne de "
-"code a été trouvée. Une :exc:`OSError` est levée si le code source ne peut être "
-"retrouvé."
+"Renvoie une liste de lignes du code source et le numéro de ligne de départ pour un "
+"objet. L'argument peut être un module, classe, méthode, fonction, trace d'exécution, "
+"cadre ou objet code. Le code source est renvoyé comme une liste des lignes "
+"correspondant à l'objet, et le numéro de ligne indique la position à laquelle la "
+"première ligne de code a été trouvée. Une :exc:`OSError` est levée si le code source "
+"ne peut être retrouvé."
 
 #: library/inspect.rst:532
 msgid ":exc:`OSError` is raised instead of :exc:`IOError`, now an alias of the former."
@@ -885,7 +885,7 @@ msgid ""
 "returned as a single string.  An :exc:`OSError` is raised if the source code cannot "
 "be retrieved."
 msgstr ""
-"Retourne le texte du code source pour un objet. L'argument peut être un module, "
+"Renvoie le texte du code source pour un objet. L'argument peut être un module, "
 "classe, méthode, fonction, trace de pile, cadre ou objet code. Le code source est "
 "retournée comme une seule chaîne de caractères. :exc:`OSError` est levé si le code "
 "source ne peut être retrouvé."
@@ -927,7 +927,7 @@ msgstr ""
 
 #: library/inspect.rst:561
 msgid "Return a :class:`Signature` object for the given ``callable``::"
-msgstr "Retourne un objet :class`Signature` pour un ``appelable`` :"
+msgstr "Renvoie un objet :class`Signature` pour un ``appelable`` :"
 
 #: library/inspect.rst:578
 msgid ""
@@ -953,7 +953,7 @@ msgid ""
 msgstr ""
 "Une barre oblique(/) dans la signature d'une fonction dénote que les paramètres qui "
 "précèdent sont exclusivement positionnels. Pour plus d'information,voir :ref:"
-"`l'entrée du FAQ sur la argument exclusivement positionnels <faq-positional-only-"
+"`l'entrée du FAQ sur les arguments exclusivement positionnels <faq-positional-only-"
 "arguments>`."
 
 #: library/inspect.rst:588
@@ -982,7 +982,7 @@ msgid ""
 "annotation.  For each parameter accepted by the function it stores a :class:"
 "`Parameter` object in its :attr:`parameters` collection."
 msgstr ""
-"L'objet Signature représente la signature d'appel d'une fonction et sont annotation "
+"L'objet Signature représente la signature d'appel d'une fonction et son annotation "
 "de type. Pour chaque paramètre accepté par une fonction, il conserve un objet :class:"
 "`Parameter` dans sa collection :attr:`parameters`."
 
@@ -994,7 +994,7 @@ msgid ""
 "positional-or-keyword, and that parameters with defaults follow parameters without "
 "defaults."
 msgstr ""
-"L'argument optionnel *parameters* est une séquence d'objet :class:`Parameters`, qui "
+"L'argument optionnel *parameters* est une séquence d'objets :class:`Parameters`, qui "
 "permet de vérifier qu'il n'y a pas de duplication de noms de paramètres, que les "
 "paramètres sont dans le bon ordre (positionnels d'abord, positionnels ou nommés "
 "ensuite et que les paramètres avec valeurs par défaut sont placés après ceux qui "
@@ -1006,7 +1006,7 @@ msgid ""
 "\"return\" annotation of the callable."
 msgstr ""
 "L'argument optionnel *return_annotation* pouvant être un objet python arbitraire, "
-"est le l'annotation de type d'un appelable."
+"est l'annotation de type d'un appelable."
 
 #: library/inspect.rst:615
 msgid ""
@@ -1060,7 +1060,7 @@ msgid ""
 "`TypeError`."
 msgstr ""
 "Crée une table de correspondance entre les arguments positionnels et nommés avec les "
-"paramètres. Retourne :class:`BoundArguments` si ``*args`` et ``**kwargs`` concordent "
+"paramètres. Renvoie :class:`BoundArguments` si ``*args`` et ``**kwargs`` concordent "
 "avec la signature, autrement lève :exc:`TypeError`."
 
 #: library/inspect.rst:649
@@ -1070,9 +1070,9 @@ msgid ""
 "`BoundArguments`, or raises a :exc:`TypeError` if the passed arguments do not match "
 "the signature."
 msgstr ""
-"Fonctionne de manière similaireà :meth:`Signature.bind`, mais permet l'omission de "
+"Fonctionne de manière similaire à :meth:`Signature.bind`, mais permet l'omission de "
 "certains arguments (semblable au comportement de :func:`functools.partial`). "
-"Retourne :class:`BoundArguments`, ou lève :exc:`TypeError` si l'argument passé ne "
+"Renvoie :class:`BoundArguments`, ou lève :exc:`TypeError` si l'argument passé ne "
 "correspond pas à la signature."
 
 #: library/inspect.rst:656
@@ -1083,7 +1083,7 @@ msgid ""
 "from the copied Signature, pass in :attr:`Signature.empty`."
 msgstr ""
 "Crée une instance de Signature sur la base de l'instance sur laquelle la méthode fût "
-"invoquée. Il est possible de passer différents paramètres et/ou annotation de type "
+"invoquée. Il est possible de passer différents paramètres et/ou annotations de type "
 "pour remplacer les propriétés correspondantes de la signature de base. Pour enlever "
 "les annotations de type de la copie de la Signature, lui passer :attr:`Signature."
 "empy`."
@@ -1112,7 +1112,7 @@ msgstr ""
 
 #: library/inspect.rst:692
 msgid "Parameter objects are picklable and hashable."
-msgstr "Les objets *Parameters* sont pickable et hachable."
+msgstr "Les objets *Parameters* sont pickable (sérialisables avec Pickle) et hachable."
 
 #: library/inspect.rst:697
 msgid ""
@@ -1162,7 +1162,7 @@ msgid ""
 "(accessible via :class:`Parameter`, like ``Parameter.KEYWORD_ONLY``):"
 msgstr ""
 "Décrit comment les valeurs d'argument sont liées au paramètre. Les valeurs possibles "
-"(accessible par :class:`Parameter`, tel que `̀Parameter.KEYWORD_ONLY``):"
+"(accessibles par :class:`Parameter`, tel que `̀Parameter.KEYWORD_ONLY``):"
 
 #: library/inspect.rst:733
 msgid "Name"
@@ -1237,7 +1237,7 @@ msgstr ""
 #: library/inspect.rst:761
 msgid "Example: print all keyword-only arguments without default values::"
 msgstr ""
-"Exemple: afficher tous les arguments exclusivement nommés sans valeur par défaut:"
+"Exemple: afficher tous les arguments exclusivement nommés sans valeur par défaut :"
 
 #: library/inspect.rst:775
 msgid "Describes a enum value of Parameter.kind."
@@ -1245,7 +1245,7 @@ msgstr "Décrit une énumération de valeurs de *Parameter.kind*."
 
 #: library/inspect.rst:779
 msgid "Example: print all descriptions of arguments::"
-msgstr "Exemple: afficher toutes les descriptions d'arguments::"
+msgstr "Exemple: afficher toutes les descriptions d'arguments ::"
 
 #: library/inspect.rst:794
 msgid ""
@@ -1283,7 +1283,7 @@ msgid ""
 msgstr ""
 "Une correspondance muable entre les noms de paramètres et les valeurs des arguments. "
 "Contient seulement les arguments liés explicitement. Les changements dans :attr:"
-"`arguments` sont réflétés dans :attr:`args` et :attr:`kwargs`."
+"`arguments` sont reflétés dans :attr:`args` et :attr:`kwargs`."
 
 #: library/inspect.rst:828
 msgid ""
@@ -1300,7 +1300,7 @@ msgid ""
 "apply_defaults` to add them."
 msgstr ""
 "Les arguments pour lesquels :meth:`Signature.bind` ou :meth:`Signature.bind_partial` "
-"supposed une valeur par défaut sont ignorés. Au besoin, utiliser :meth:"
+"supposent une valeur par défaut sont ignorés. Au besoin, utiliser :meth:"
 "`BoundArguments.apply_defaults` pour les inclure."
 
 #: library/inspect.rst:838
@@ -1339,7 +1339,7 @@ msgstr "Assigne les valeurs par défaut pour les arguments manquants."
 msgid "For variable-positional arguments (``*args``) the default is an empty tuple."
 msgstr ""
 "Pour les arguments positionnels variables (``*args``) la valeur par défaut est un "
-"tuple vide."
+"*n*-uplet vide."
 
 #: library/inspect.rst:863
 msgid "For variable-keyword arguments (``**kwargs``) the default is an empty dict."
@@ -1352,7 +1352,7 @@ msgid ""
 "The :attr:`args` and :attr:`kwargs` properties can be used to invoke functions::"
 msgstr ""
 "Les propriétés :attr:`args` et :attr:`kwargs` peuvent être utilisées pour l'appel de "
-"fonctions::"
+"fonctions ::"
 
 # Unsure if the that reference has been translated or not.
 # If not, I'd be inclined to leave it italic (english).
@@ -1378,9 +1378,9 @@ msgid ""
 "returned structure for each class in the given list.  Otherwise, classes using "
 "multiple inheritance and their descendants will appear multiple times."
 msgstr ""
-"Organize la liste de classes donnée en une hiérarchie de listes imbriquées. "
+"Organise la liste de classes donnée en une hiérarchie de listes imbriquées. "
 "Lorsqu'une liste imbriquée apparaît, elle contient les classes dérivées de la classe "
-"dont l'entrée précède immédiatement cette liste. Chaque entrée est un *2*-uplet "
+"dont l'entrée précède immédiatement cette liste. Chaque entrée est une paire "
 "contenant la classe et un *n*-uplet de ses classes de base. Si l'argument *unique* "
 "est vrai, exactement une entrée apparaît dans la structure renvoyée pour chaque "
 "classe de la liste donnée en argument. Autrement, les classes utilisant l'héritage "
@@ -1396,12 +1396,12 @@ msgid ""
 "correspond to the last *n* elements listed in *args*."
 msgstr ""
 "Obtient les noms et les valeurs par défaut des paramètres d'une fonction Python. Un :"
-"term:`named tuple` ``ArgSpec(args, varargs, keywords, defaults)`` est renvoyé. "
-"*args* est une liste de noms de paramètres. *varargs* et *keywords* sont les noms "
-"des paramètres ``*`` et ``**``, ou ``None``. *defaults* est une *n*-uplet des "
-"valeurs par défaut des arguments ou ``None`` s'il n'y a aucun argument par défaut; "
-"si ce *n*-uplet possède *n* éléments, ils correspondent au dernier *n* éléments "
-"listés dans *args*."
+"term:`n-uplet nommé <named tuple>` ``ArgSpec(args, varargs, keywords, defaults)`` "
+"est renvoyé. *args* est une liste de noms de paramètres. *varargs* et *keywords* "
+"sont les noms des paramètres ``*`` et ``**``, ou ``None``. *defaults* est une *n*-"
+"uplet des valeurs par défaut des arguments ou ``None`` s'il n'y a aucun argument par "
+"défaut; si ce *n*-uplet possède *n* éléments, ils correspondent au dernier *n* "
+"éléments listés dans *args*."
 
 #: library/inspect.rst:919
 msgid ""
@@ -1418,7 +1418,7 @@ msgid ""
 "object>`, which provide a more structured introspection API for callables."
 msgstr ""
 "Alternativement, utilisez :func:`signature` et :ref:`Signature Object <inspect-"
-"signature-object>`, qui fournit un API plus structure pour l’introspection "
+"signature-object>`, qui fournit un API plus structuré pour l’introspection "
 "d'appelables."
 
 #: library/inspect.rst:931
@@ -1427,7 +1427,7 @@ msgid ""
 "tuple` is returned:"
 msgstr ""
 "Obtenir les noms et les valeurs par défaut des paramètres de fonction Python. Un :"
-"term:`n-uplet nommé <named tuple>` est renvoyé:"
+"term:`n-uplet nommé <named tuple>` est renvoyé :"
 
 #: library/inspect.rst:934
 msgid ""
@@ -1438,7 +1438,6 @@ msgstr ""
 "annotations)``"
 
 #: library/inspect.rst:937
-#, fuzzy
 msgid ""
 "*args* is a list of the positional parameter names. *varargs* is the name of the "
 "``*`` parameter or ``None`` if arbitrary positional arguments are not accepted. "
@@ -1452,7 +1451,7 @@ msgid ""
 "is used to report the function return value annotation (if any)."
 msgstr ""
 "*args* est une liste de noms de paramètres positionnels. *varargs* est le nom du "
-"paramètres ``*`` ou ``None`` si les arguments positionnels arbitraires ne sont pas "
+"paramètre ``*`` ou ``None`` si les arguments positionnels arbitraires ne sont pas "
 "acceptés. *varkw* est le nom du paramètre ``**``, ou ``None`` si les paramètres "
 "arbitraires nommés ne sont pas acceptés. *defaults* est un *n*-uplet des valeurs des "
 "arguments par défaut correspondant aux derniers *n* arguments positionnels, ou "
@@ -1509,7 +1508,7 @@ msgid ""
 "arguments or ``None``.  *locals* is the locals dictionary of the given frame."
 msgstr ""
 "Obtenir de l'information sur les arguments passé à un cadre particulier. Un :term:`n-"
-"uplet <named tuple>` ``ArgInfo(args, varargs, keywords, locals)`` est renvoyé. "
+"uplet nommé <named tuple>` ``ArgInfo(args, varargs, keywords, locals)`` est renvoyé. "
 "*args* est une liste de noms d'arguments. *varags* et *keywords* sont les noms des "
 "arguments ``*`` et ``**`` ou ``None``. *locals* est le dictionnaire des variables "
 "locales du cadre courant."
@@ -1534,14 +1533,15 @@ msgstr ""
 
 # WHat? To "turn"? What's turning here?
 #: library/inspect.rst:997
-#, fuzzy
 msgid ""
 "The other six arguments are functions that are called to turn argument names, ``*`` "
 "argument name, ``**`` argument name, default values, return annotation and "
 "individual annotations into strings, respectively."
 msgstr ""
-"Les six autres arguments de l, ``*`` argument name, ``**`` argument name, default "
-"values, return annotation and individual annotations into strings, respectively."
+"Les six autres arguments sont des fonctions appelées pour transformer les noms "
+"d'arguments, ``*`` l'argument exclusivement positionnel, ``**`` l'argument "
+"exclusivement nommé, les valeurs par défaut, les annotations de type et les "
+"annotations individuelles en chaînes, respectivement."
 
 #: library/inspect.rst:1001
 msgid "For example:"
@@ -1574,9 +1574,9 @@ msgid ""
 msgstr ""
 "Renvoie un *n*-uplet des classes de base de *cls*, incluant *cls*, selon le l'ordre "
 "de résolution des méthodes (*method resolution order*). Aucune classe n'apparaît "
-"plus d'une fois dans ce *n*-uplet.  Notez que le l'ordre de résolution des méthodes "
+"plus d'une fois dans ce *n*-uplet. Notez que le l'ordre de résolution des méthodes "
 "dépend du type de *cls*. Exception faite d'une utilisation très particulière de la "
-"métaclasse définie par l'usager, *cls* sera toujour le premier élément du tuple."
+"métaclasse définie par l'usager, *cls* sera toujours le premier élément du tuple."
 
 #: library/inspect.rst:1036
 msgid ""
@@ -1591,13 +1591,13 @@ msgid ""
 msgstr ""
 "Lie *args* et *kwds* aux arguments nommés de la fonction ou méthode Python *func*, "
 "comme si elle était appelée avec ceux-ci. Pour les méthodes liées, lie aussi le "
-"premier argument (typiquement appelé ``self``) à l'instance associée. Un "
+"premier argument (normalement appelé ``self``) à l'instance associée. Un "
 "dictionnaire est renvoyé, une correspondance entre les noms des arguments (incluant "
-"les noms des arguments ``*`` et ``**``, s'ils existent) et leur valeur obtenue de "
+"les noms des arguments ``*`` et ``**``, s'ils existent) et leurs valeurs obtenues de "
 "*args* et *kwds*. Lors d'une invocation incorrecte de *func*, i.e. lorsque "
 "``func(*args, **kwds)`` lèverait une exception en raison de signature incompatible, "
 "une exception du même type et de message identique ou similaire est levée. Par "
-"exemple::"
+"exemple ::"
 
 #: library/inspect.rst:1059
 msgid "Use :meth:`Signature.bind` and :meth:`Signature.bind_partial` instead."
@@ -1645,8 +1645,8 @@ msgid ""
 msgstr ""
 "*stop* est une fonction de *callback* optionnelle qui accepte un objet de la chaîne "
 "englobée comme son seul argument et permet d'arrêter le dépouillage avant la fin si "
-"la fonction de *callback* retourne une valeur vraie. Si la fonction *callback* ne "
-"retourne jamais une valeur vraie, le dernier objet de la chaîne est retourné comme "
+"la fonction de *callback* renvoie une valeur vraie. Si la fonction *callback* ne "
+"renvoie jamais une valeur vraie, le dernier objet de la chaîne est renvoyé comme "
 "d'habitude. Par exemple, :func:`signature` utilise ceci pour arrêter le dépouillage "
 "si un objet dans la chaîne défini un attribut ``__signature__``."
 
@@ -1667,11 +1667,11 @@ msgid ""
 "the current line within that list."
 msgstr ""
 "Lorsque les fonctions qui suivent renvoient des enregistrements de cadres (*frame "
-"records* en anglais), chaque enregistrement est un :term:`n-uplet <named tuple>` "
-"``FrameInfo(frame, filename, lineno, function, code_context, index)``. Le *n*-uplet "
-"contient l'objet cadre, le nom de fichier, le numéro de ligne de la ligne courante, "
-"le nom de la fonction, une liste des lignes de contexte du code source et l'index de "
-"la ligne courante dans cette liste."
+"records* en anglais), chaque enregistrement est un :term:`n-uplet nommé <named "
+"tuple>` ``FrameInfo(frame, filename, lineno, function, code_context, index)``. Le "
+"*n*-uplet contient l'objet cadre, le nom de fichier, le numéro de ligne de la ligne "
+"courante, le nom de la fonction, une liste des lignes de contexte du code source et "
+"l'index de la ligne courante dans cette liste."
 
 #: library/inspect.rst:1109
 msgid "Return a named tuple instead of a tuple."
@@ -1688,7 +1688,7 @@ msgid ""
 "objects and increased memory consumption which occurs."
 msgstr ""
 "Conserver des références à des objets cadre, tel que trouvé dans le 1er élément des "
-"enregistrements de cadre que ces fonctions renvoient, peut créer des cycles de "
+"enregistrements de cadres que ces fonctions renvoient, peut créer des cycles de "
 "référence dans votre programme. Lorsqu'un cycle de référence a été créé, la durée de "
 "vie de tous les objets pouvant être accessibles par ces objets peut être grandement "
 "augmentée, même si le détecteur de cycle (optionnel) de Python est activé. Si ces "
@@ -1707,7 +1707,7 @@ msgstr ""
 "locales) peut être fait de manière déterministe en enlevant les cycles dans une "
 "clause :keyword:`finally`. Cela est important si le détecteur de cycle a été "
 "désactivé lors de la compilation du code Python ou en utilisant :func:`gc.disable`. "
-"Par exemple::"
+"Par exemple ::"
 
 #: library/inspect.rst:1134
 msgid ""
@@ -1724,7 +1724,7 @@ msgid ""
 "number of lines of context to return, which are centered around the current line."
 msgstr ""
 "L'argument optionnel *context* supporté par la plupart de ces méthodes spécifie le "
-"nombre de ligne de contexte à renvoyer, qui sera centré autour de la ligne courante."
+"nombre de lignes de contexte à renvoyer, qui sera centré autour de la ligne courante."
 
 #: library/inspect.rst:1145
 msgid ""
@@ -1743,8 +1743,8 @@ msgid ""
 "*frame*'s stack."
 msgstr ""
 "Obtenir une liste d'enregistrements de cadre pour ce *frame* et tous les cadre "
-"externes. Ces cadres représentent les appels ayant mené à la création du *frame*; la "
-"dernière entrée représente l'appel le plus éloigné sur la pile de ce *frame*."
+"externes. Ces cadres représentent les appels ayant mené à la création du *frame* ; "
+"la dernière entrée représente l'appel le plus éloigné sur la pile de ce *frame*."
 
 #: library/inspect.rst:1169 library/inspect.rst:1206
 msgid ""
@@ -1769,7 +1769,7 @@ msgstr ""
 
 #: library/inspect.rst:1177
 msgid "Return the frame object for the caller's stack frame."
-msgstr "Retourne l'objet cadre de la pile pour le cadre de l’appelant."
+msgstr "Renvoie l'objet cadre de la pile pour le cadre de l’appelant."
 
 #: library/inspect.rst:1181
 msgid ""
@@ -1788,7 +1788,7 @@ msgid ""
 "returned list represents the caller; the last entry represents the outermost call on "
 "the stack."
 msgstr ""
-"Retourne une liste d'enregistrement de cadres de la pile de l'appelant. La première "
+"Renvoie une liste d'enregistrements de cadres de la pile de l'appelant. La première "
 "entrée dans la liste renvoyée représente l'appelant; la dernière entrée représente "
 "l'appel le plus éloigné de l'appelant sur la pile."
 
@@ -1798,7 +1798,7 @@ msgid ""
 "in which an exception currently being handled was raised in.  The first entry in the "
 "list represents the caller; the last entry represents where the exception was raised."
 msgstr ""
-"Retourne une liste de d'enregistrement de cadre pour la pile entre le cadre courant "
+"Renvoie une liste de d'enregistrements de cadres pour la pile entre le cadre courant "
 "et le cadre dans lequel une l'exception en cours a été levée. La première entrée "
 "représente l'appelant; la dernière entrée représente l'endroit où l'exception fût "
 "levée."
@@ -1846,8 +1846,8 @@ msgid ""
 msgstr ""
 "Note: cette fonction ne retrouve pas forcément tous les attributs retournés par "
 "*getattr* (tel que des attributs générés dynamiquement) et pourrait retrouver des "
-"attributs non retrouvés par *getattr* (tel que des descripteurs qui lève un "
-"*AttributeError*). Il peut aussi retourner des objets descripteurs, plutôt que des "
+"attributs non retrouvés par *getattr* (tel que des descripteurs qui lèvent un "
+"*AttributeError*). Il peut aussi donner des objets descripteurs, plutôt que des "
 "membres d'instance."
 
 #: library/inspect.rst:1235
@@ -1875,7 +1875,7 @@ msgid ""
 "descriptors invoking these may trigger code execution::"
 msgstr ""
 "Vous pouvez gérer ces cas à l'aide du code suivant. Notez que pour des descripteurs "
-"arbitraires *getset* les invoquant, de l'exécution de code pourrait être lancée:"
+"arbitraires *getset* les invoquant, de l'exécution de code pourrait être lancée :"
 
 #: library/inspect.rst:1271
 msgid "Current State of Generators and Coroutines"
@@ -1889,9 +1889,10 @@ msgid ""
 "allows the current state of a generator to be determined easily."
 msgstr ""
 "Lors de l'implémentation d'ordonnanceur de coroutine et autres utilisations avancées "
-"de générateurs, il est utile de détermine si un générateur est présentement en cours "
-"d'exécution, en attente de démarrage ou de continuation, ou s'il a déjà terminé. :"
-"func:`getgeneratorstate` permet d'aisément déterminer l'état courant d'un générateur."
+"de générateurs, il est utile de déterminer si un générateur est présentement en "
+"cours d'exécution, en attente de démarrage ou de continuation, ou s'il a déjà "
+"terminé. :func:`getgeneratorstate` permet d'aisément déterminer l'état courant d'un "
+"générateur."
 
 #: library/inspect.rst:1281
 msgid "Get current state of a generator-iterator."
@@ -1899,23 +1900,23 @@ msgstr "Donne l'état courant d'un générateur-itérateur."
 
 #: library/inspect.rst:1302
 msgid "Possible states are:"
-msgstr "Les états possibles:"
+msgstr "Les états possibles :"
 
 #: library/inspect.rst:1284
 msgid "GEN_CREATED: Waiting to start execution."
-msgstr "GEN_CREATED: En attente de démarrage d'exécution."
+msgstr "GEN_CREATED : En attente de démarrage d'exécution."
 
 #: library/inspect.rst:1285
 msgid "GEN_RUNNING: Currently being executed by the interpreter."
-msgstr "GEN_RUNNING: En cours d'exécution par l'interpréteur."
+msgstr "GEN_RUNNING : En cours d'exécution par l'interpréteur."
 
 #: library/inspect.rst:1286
 msgid "GEN_SUSPENDED: Currently suspended at a yield expression."
-msgstr "GEN_SUSPENDED: Présentement suspendu à une expression *yield*."
+msgstr "GEN_SUSPENDED : Présentement suspendu à une expression *yield*."
 
 #: library/inspect.rst:1287
 msgid "GEN_CLOSED: Execution has completed."
-msgstr "GEN_CLOSED: L'exécution est complétée."
+msgstr "GEN_CLOSED : L'exécution est complétée."
 
 #: library/inspect.rst:1293
 msgid ""
@@ -1930,19 +1931,19 @@ msgstr ""
 
 #: library/inspect.rst:1299
 msgid "CORO_CREATED: Waiting to start execution."
-msgstr "CORO_CREATED: En attente de démarrage d'exécution."
+msgstr "CORO_CREATED : En attente de démarrage d'exécution."
 
 #: library/inspect.rst:1300
 msgid "CORO_RUNNING: Currently being executed by the interpreter."
-msgstr "CORO_RUNNING: En cours d'exécution par l'interpréteur."
+msgstr "CORO_RUNNING : En cours d'exécution par l'interpréteur."
 
 #: library/inspect.rst:1301
 msgid "CORO_SUSPENDED: Currently suspended at an await expression."
-msgstr "CORO_SUSPENDED: Suspendu à une expression *await*."
+msgstr "CORO_SUSPENDED : Suspendu à une expression *await*."
 
 #: library/inspect.rst:1302
 msgid "CORO_CLOSED: Execution has completed."
-msgstr "CORO_CLOSED: Exécution complétée."
+msgstr "CORO_CLOSED : Exécution complétée."
 
 #: library/inspect.rst:1306
 msgid ""
@@ -1951,7 +1952,7 @@ msgid ""
 "expected:"
 msgstr ""
 "L'état courant interne du générateur peut aussi être vérifié. Ceci est utile pour "
-"des tests, afin d'assurer que l'état interne est mise à jour tel que prévu:"
+"des tests, afin d'assurer que l'état interne est mise à jour tel que prévu :"
 
 #: library/inspect.rst:1312
 msgid ""
@@ -1961,7 +1962,7 @@ msgid ""
 "caveats apply."
 msgstr ""
 "Donne une correspondance de variables locales dans *generator* avec les valeurs "
-"courantes. Un dictionnaire est retourné, établissant la correspondance entre "
+"courantes. Un dictionnaire est renvoyé, établissant la correspondance entre "
 "variables et valeurs. Ceci est équivalent à appeler :func:`locals` dans le corps du "
 "générateur et les mêmes restrictions s'appliquent."
 
@@ -1983,7 +1984,7 @@ msgid ""
 msgstr ""
 "Cette fonction repose sur l'exposition d'une pile de cadres Python par le générateur "
 "pour l'introspection, ce qui n'est pas garanti dans toutes les implémentations "
-"Python. Dans un tel cas, cette fonction retourne toujours un dictionnaire vide."
+"Python. Dans un tel cas, cette fonction renvoie toujours un dictionnaire vide."
 
 #: library/inspect.rst:1332
 msgid ""
@@ -2049,7 +2050,7 @@ msgid ""
 "is executed it returns a coroutine object. See :pep:`492` for more details."
 msgstr ""
 "L'option est définie lorsque le code objet est une fonction coroutine. Lors que le "
-"code objet est exécuté, il retourne un objet coroutine. Voir :pep:`492` pour plus de "
+"code objet est exécuté, il renvoie un objet coroutine. Voir :pep:`492` pour plus de "
 "détails."
 
 #: library/inspect.rst:1386
@@ -2104,7 +2105,7 @@ msgid ""
 "class or function within the module can be printed instead by appended a colon and "
 "the qualified name of the target object."
 msgstr ""
-"Par défault, il accepte le nom d'un module et affiche la source de ce module. Une "
+"Par défaut, il accepte le nom d'un module et affiche la source de ce module. Une "
 "classe ou fonction à l'intérieur du module peut également être affichée en ajoutant "
 "un \":\" et le nom qualifié de l'objet désiré."
 
