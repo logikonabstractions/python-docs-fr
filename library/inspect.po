@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 16:00+0200\n"
-"PO-Revision-Date: 2021-01-11 08:39-0500\n"
+"PO-Revision-Date: 2021-01-11 08:48-0500\n"
 "Last-Translator: Franck Vachon <logicOnAbstractions@gmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
@@ -965,7 +965,7 @@ msgstr ""
 
 #: library/inspect.rst:561
 msgid "Return a :class:`Signature` object for the given ``callable``::"
-msgstr "Renvoie un objet :class`Signature` pour un ``appelable`` :"
+msgstr "Renvoie un objet :class:`Signature` pour un ``appelable`` :"
 
 #: library/inspect.rst:578
 msgid ""
