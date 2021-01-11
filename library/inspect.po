@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 16:00+0200\n"
-"PO-Revision-Date: 2021-01-11 09:34-0500\n"
+"PO-Revision-Date: 2021-01-11 09:47-0500\n"
 "Last-Translator: Franck Vachon <logicOnAbstractions@gmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
@@ -1681,7 +1681,7 @@ msgstr ""
 #: library/inspect.rst:1059
 msgid "Use :meth:`Signature.bind` and :meth:`Signature.bind_partial` instead."
 msgstr ""
-"Utilisez plutôt :meth:`Signature.bind`et :meth:`Signature.bind_partial`."
+"Utilisez plutôt :meth:`Signature.bind` et :meth:`Signature.bind_partial`."
 
 #: library/inspect.rst:1065
 msgid ""
@@ -1931,7 +1931,7 @@ msgid ""
 "protocol, :meth:`__getattr__` or :meth:`__getattribute__`."
 msgstr ""
 "Retrouve des attributs sans lancer une recherche dynamique via le protocole "
-"descripteur, :meth:`__getattr__` or :meth:`__getattribute__`."
+"descripteur, :meth:`__getattr__` ou :meth:`__getattribute__`."
 
 #: library/inspect.rst:1229
 msgid ""
