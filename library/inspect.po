@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Le module :mod:`inspect` implémente plusieurs fonctions permettant d'obtenir "
 "de l'information à propos d'objets tels que les modules, classes, méthodes, "
-"fonctions, traces de piles, cadres d'exécution et objet code. Par exemple, "
+"fonctions, traces de piles, cadres d'exécution et objets code. Par exemple, "
 "il permet d'inspecter le contenu d'une classe, de retrouver le code source "
 "d'une méthode, d'extraire et de mettre en forme une liste d'arguments pour "
 "une fonction, ou obtenir toute l'information nécessaire pour afficher une "
@@ -63,7 +63,7 @@ msgid ""
 "following special attributes:"
 msgstr ""
 "La fonction :func:`getmembers` retrouve les membres d'un objet, tel qu'une "
-"classe ou un module. Les fonctions avec préfixe *is* sont pratiques en temps "
+"classe ou un module. Les fonctions avec préfixe *is* sont pratiques en tant "
 "que deuxième argument à :func:`getmembers`. Elles permettent aussi de "
 "déterminer si on peut s'attendre à trouver les attributs spéciaux suivants :"
 
@@ -234,7 +234,7 @@ msgstr "tb_lasti"
 
 #: library/inspect.rst:132
 msgid "index of last attempted instruction in bytecode"
-msgstr "index de la dernière instruction lancée dans le code intermédiaire"
+msgstr "index de la dernière instruction lancée dans le code intermédiaire (``bytecode``)"
 
 #: library/inspect.rst:113
 msgid "tb_lineno"
@@ -338,7 +338,7 @@ msgstr "texte du code intermédiaire compilé"
 
 #: library/inspect.rst:152
 msgid "co_cellvars"
-msgstr "co_cellvars"
+msgstr "`co_cellvars`"
 
 # scope... différent du cadre, mais dans le context cadre me semble approprié
 #: library/inspect.rst:152
@@ -352,7 +352,7 @@ msgstr "co_consts"
 
 #: library/inspect.rst:156
 msgid "tuple of constants used in the bytecode"
-msgstr "*n*-uplet des constantes utilisées dans le code intermédiaire"
+msgstr "*n*-uplet des constantes utilisées dans le code intermédiaire (``bytecode``)"
 
 #: library/inspect.rst:159
 msgid "co_filename"
@@ -360,7 +360,7 @@ msgstr "co_filename"
 
 #: library/inspect.rst:159
 msgid "name of file in which this code object was created"
-msgstr "nom du fichier dans lequel ce code objet a été créé"
+msgstr "nom du fichier dans lequel cet objet code a été créé"
 
 #: library/inspect.rst:163
 msgid "co_firstlineno"
@@ -378,7 +378,7 @@ msgstr "co_flags"
 msgid ""
 "bitmap of ``CO_*`` flags, read more :ref:`here <inspect-module-co-flags>`"
 msgstr ""
-"**bitmap** des options ``CO_*``, voir :ref:`aussi <inspect-module-co-flags>`"
+"**bitmap** des options ``CO_*``, voir plus :ref:`ici <inspect-module-co-flags>`"
 
 #: library/inspect.rst:170
 msgid "co_lnotab"
@@ -388,7 +388,7 @@ msgstr "co_lnotab"
 msgid "encoded mapping of line numbers to bytecode indices"
 msgstr ""
 "tableau de correspondance encodée des numéros de ligne aux numéros d'indices "
-"du code intermédiaire"
+"du code intermédiaire (``bytecode``)"
 
 #: library/inspect.rst:174
 msgid "co_freevars"
@@ -398,7 +398,7 @@ msgstr "co_freevars"
 msgid "tuple of names of free variables (referenced via a function's closure)"
 msgstr ""
 "*n*-uplet des noms de variables libres (référencées par une fonction "
-"fermeture)"
+"fermeture (``closure``))"
 
 #: library/inspect.rst:178
 msgid "co_posonlyargcount"
@@ -446,7 +446,7 @@ msgstr "co_stacksize"
 
 #: library/inspect.rst:193
 msgid "virtual machine stack space required"
-msgstr "espace requise pour la pile de la machine virtuelle"
+msgstr "espace requis pour la pile de la machine virtuelle"
 
 #: library/inspect.rst:196
 msgid "co_varnames"
@@ -475,7 +475,7 @@ msgstr "gi_running"
 
 #: library/inspect.rst:206
 msgid "is the generator running?"
-msgstr "est-ce que le générateur est en cours d'exécution?"
+msgstr "est-ce que le générateur est en cours d'exécution ?"
 
 #: library/inspect.rst:208
 msgid "gi_code"
@@ -511,7 +511,7 @@ msgstr "cr_running"
 
 #: library/inspect.rst:223
 msgid "is the coroutine running?"
-msgstr "est-ce que la coroutine est en cours d'exécution?"
+msgstr "est-ce que la coroutine est en cours d'exécution ?"
 
 #: library/inspect.rst:225
 msgid "cr_code"
@@ -600,7 +600,7 @@ msgid ""
 "``None``."
 msgstr ""
 "Notez que cette fonction renvoie un nom significatif *seulement* pour les "
-"modules Python - les chemins qui réfèrent à de potentiels paquets Python "
+"modules Python - les chemins qui réfèrent potentiellement à des paquets Python "
 "donnent toujours ``None``."
 
 #: library/inspect.rst:280
@@ -670,7 +670,7 @@ msgid ""
 "`async def` function."
 msgstr ""
 "Renvoie ``True`` si l'objet est une :term:`coroutine <coroutine>` créée par "
-"une fonction :keyword:`asynx def`."
+"une fonction :keyword:`async def`."
 
 #: library/inspect.rst:342
 msgid ""
@@ -685,7 +685,7 @@ msgid ""
 "generators::"
 msgstr ""
 "Peut aussi être utilisé pour distinguer les coroutines basées sur un "
-"générateur des générateurs réguliers :"
+"générateur des générateurs réguliers ::"
 
 #: library/inspect.rst:361
 msgid ""
@@ -693,7 +693,7 @@ msgid ""
 "for example::"
 msgstr ""
 "Renvoie ``True`` si l'objet est une fonction :term:`générateur asynchrone "
-"<asynchronous generator>`, par exemple :"
+"<asynchronous generator>`, par exemple ::"
 
 #: library/inspect.rst:372
 msgid ""
@@ -753,7 +753,7 @@ msgid ""
 msgstr ""
 "Renvoie ``True`` si l'objet est un descripteur de méthode sauf si :func:"
 "`ismethod`, :func:`isclass`, :func:`isfunction` ou :func:`isbuiltin` est "
-"vrai."
+"vrai (``True``)."
 
 #: library/inspect.rst:420
 msgid ""
@@ -966,7 +966,7 @@ msgstr ""
 
 #: library/inspect.rst:561
 msgid "Return a :class:`Signature` object for the given ``callable``::"
-msgstr "Renvoie un objet :class:`Signature` pour un ``appelable`` :"
+msgstr "Renvoie un objet :class:`Signature` pour un ``appelable`` ::"
 
 #: library/inspect.rst:578
 msgid ""
@@ -990,7 +990,7 @@ msgid ""
 "to it are positional-only. For more info, see :ref:`the FAQ entry on "
 "positional-only parameters <faq-positional-only-arguments>`."
 msgstr ""
-"Une barre oblique(/) dans la signature d'une fonction dénote que les "
+"Une barre oblique (/) dans la signature d'une fonction dénote que les "
 "paramètres qui précèdent sont exclusivement positionnels. Pour plus "
 "d'information,voir :ref:`l'entrée du FAQ sur les arguments exclusivement "
 "positionnels <faq-positional-only-arguments>`."
@@ -1001,7 +1001,7 @@ msgid ""
 "``callable`` specifically (``callable.__wrapped__`` will not be used to "
 "unwrap decorated callables.)"
 msgstr ""
-"Paramètre ``follow_wrapped``. Passer ``False`` pour obtenir une signature "
+"Paramètre ``follow_wrapped``. Passez ``False`` pour obtenir une signature "
 "``callable`` plus spécifiquement (``callable.__wrapped__`` ne sera pas "
 "utilisé pour dépouiller un appelable décoré.)"
 
@@ -1137,13 +1137,13 @@ msgid ""
 "``obj``.  Pass ``follow_wrapped=False`` to get a signature of ``obj`` "
 "without unwrapping its ``__wrapped__`` chain."
 msgstr ""
-"Renvoie un objet :class:`Signature` (ou sa sous-classe) pour une appelable "
-"donnée ``obj``. Lui passer ``follow_wrapped=False`` pour obtenir une "
+"Renvoie un objet :class:`Signature` (ou sa sous-classe) pour un appelable "
+"donné ``obj``. Lui passer ``follow_wrapped=False`` pour obtenir une "
 "signature de ``obj`` sans dépouiller sa chaîne ``__wrapped__``."
 
 #: library/inspect.rst:677
 msgid "This method simplifies subclassing of :class:`Signature`::"
-msgstr "Cette méthode simplifie l'héritage de :class:`Signature`::"
+msgstr "Cette méthode simplifie l'héritage de :class:`Signature` ::"
 
 #: library/inspect.rst:689
 msgid ""
@@ -1180,8 +1180,8 @@ msgid ""
 "CPython generates implicit parameter names of the form ``.0`` on the code "
 "objects used to implement comprehensions and generator expressions."
 msgstr ""
-"CPython génère un nom de paramètre implicite de forme ``.0`` sur le code "
-"d'objets utilisés pour implémenter les compréhensions et expressions "
+"CPython génère un nom de paramètre implicite de forme ``.0`` sur les objets "
+"de code utilisés pour implémenter les compréhensions et expressions "
 "génératrices."
 
 #: library/inspect.rst:711
@@ -1214,7 +1214,7 @@ msgid ""
 msgstr ""
 "Décrit comment les valeurs d'argument sont liées au paramètre. Les valeurs "
 "possibles (accessibles par :class:`Parameter`, tel que `̀Parameter."
-"KEYWORD_ONLY``):"
+"KEYWORD_ONLY``) :"
 
 #: library/inspect.rst:733
 msgid "Name"
@@ -1294,7 +1294,7 @@ msgstr ""
 #: library/inspect.rst:761
 msgid "Example: print all keyword-only arguments without default values::"
 msgstr ""
-"Exemple: afficher tous les arguments exclusivement nommés sans valeur par "
+"Exemple : afficher tous les arguments exclusivement nommés sans valeur par "
 "défaut :"
 
 #: library/inspect.rst:775
@@ -1314,7 +1314,7 @@ msgid ""
 msgstr ""
 "Crée une instance de *Parameter* sur la base de l'instance sur laquelle la "
 "méthode fût invoquée. Pour redéfinir un attribut :class:`Parameter`, lui "
-"passer l'argument correspondant . Pour enlever les valeurs par défaut et/ou "
+"passer l'argument correspondant. Pour enlever les valeurs par défaut et/ou "
 "les annotations de retour de la copie du Parameter, lui passer :attr:"
 "`Signature.empy`."
 
@@ -1424,7 +1424,7 @@ msgstr ""
 # If not, I'd be inclined to leave it italic (english).
 #: library/inspect.rst:889
 msgid ":pep:`362` - Function Signature Object."
-msgstr ":pep:`362` - Function Signature Object."
+msgstr ":pep:`362` - *Function Signature Object*."
 
 #: library/inspect.rst:890
 msgid "The detailed specification, implementation details and examples."
@@ -1468,7 +1468,7 @@ msgstr ""
 "keywords, defaults)`` est renvoyé. *args* est une liste de noms de "
 "paramètres. *varargs* et *keywords* sont les noms des paramètres ``*`` et "
 "``**``, ou ``None``. *defaults* est une *n*-uplet des valeurs par défaut des "
-"arguments ou ``None`` s'il n'y a aucun argument par défaut; si ce *n*-uplet "
+"arguments ou ``None`` s'il n'y a aucun argument par défaut ; si ce *n*-uplet "
 "possède *n* éléments, ils correspondent au dernier *n* éléments listés dans "
 "*args*."
 
@@ -2075,7 +2075,7 @@ msgid ""
 "*generator* is not a Python generator object."
 msgstr ""
 "Si *generator* est un :term:`générateur <generator>` sans cadre courant "
-"associé, alors un dictionnaire vide est renvoyé. :exc:`TypeError` est levé "
+"associé, alors un dictionnaire vide est renvoyé. :exc:`TypeError` est levé "
 "sir *generator* n'est pas un objet générateur Python."
 
 #: library/inspect.rst:1323
@@ -2109,7 +2109,7 @@ msgid ""
 "following flags:"
 msgstr ""
 "Les objets de code Python ont un attribut ``co_flags``, ce qui est un "
-"*bitmap* des drapeaux suivants:"
+"*bitmap* des drapeaux suivants :"
 
 #: library/inspect.rst:1348
 msgid "The code object is optimized, using fast locals."
